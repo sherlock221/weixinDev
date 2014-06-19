@@ -8,12 +8,10 @@ var bodyParser = require('body-parser');
 var session = require('express-session');
 var ejs   = require("ejs");
 var middleWareUtil  = require("./util/middleWareUtil");
-var domain = require("domain");
 var router = require("./routes/router");
 var log4j = require("./log");
 var app = express();
 var compress = require("compression");
-var db  = require("./models/db");
 
 var Result = require("./routes/result/result");
 
@@ -40,8 +38,6 @@ app.use(middleWareUtil.consoleHttpParam);
 
 //路由配置
 router.use(app);
-//隐藏功能
-router.hidden(app);
 
 //配置404页面
 app.use(function(req, res, next) {

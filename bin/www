@@ -3,10 +3,9 @@
 var debug = require('debug')('my-application');
 var app = require('../app');
 
-app.set('port', process.env.PORT || 4000);
+app.set('port', process.env.PORT || 80);
 
 var server = app.listen(app.get('port'), function() {
   debug('企业云服务器启动  端口:' + server.address().port);
   console.log('企业云服务器启动 端口:' + server.address().port);
-
 });

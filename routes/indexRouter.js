@@ -5,15 +5,15 @@ var crypto=require("crypto");
 //进入登录页面
 exports.verify = function(req,res,next){
     log.info("进入测试...");
-
+    console.log("进入测试");
     //微信加密签名
-    var signature = req.query("signature");
+    var signature = req.query.signature;
     //时间戳
-    var timestamp = req.query("timestamp");
+    var timestamp = req.query.timestamp;
     //随机数
-    var nonce = req.query("nonce");
+    var nonce = req.query.nonce;
     //随机字符串
-    var echostr = req.query("echostr");
+    var echostr = req.query.echostr;
 
     //token
     var token = "daohao1914";
