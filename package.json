@@ -22,7 +22,8 @@
         "grunt-contrib-cssmin": "*",
         "grunt-contrib-watch": "*",
         "grunt-contrib-connect": "*",
-        "mysql" : "*"
+        "mysql" : "*",
+        "wechat" : "*"
     }
 
 }

@@ -6,15 +6,16 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var session = require('express-session');
+var compress = require("compression");
 var ejs   = require("ejs");
 var middleWareUtil  = require("./util/middleWareUtil");
 var router = require("./routes/router");
 var log4j = require("./log");
+
+
 var app = express();
-var compress = require("compression");
 
 var Result = require("./routes/result/result");
-
 
 //让ejs使用扩展名html文件
 app.engine('.html', ejs.__express);
@@ -34,10 +35,10 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 //app.use(compress);
 //打印http参数
-app.use(middleWareUtil.consoleHttpParam);
-
+//app.use(middleWareUtil.consoleHttpParam);
 //路由配置
 router.use(app);
+
 
 //配置404页面
 app.use(function(req, res, next) {
