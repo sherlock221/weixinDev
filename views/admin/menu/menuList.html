@@ -6,7 +6,101 @@
 </head>
 <body>
 
-<h1>Hello, world!</h1>
+<%- include ../common/nav.html %>
+
+<div class="container  mt45">
+
+    <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+       修改/添加按钮
+    </button>
+
+    <div class="table-responsive">
+        <table class="table">
+            <thead>
+            <tr>
+                <th>按钮名称</th>
+                <th>类型</th>
+                <th>key值</th>
+                <th>链接url</th>
+                <th>二级按钮</th>
+                <th>操作</th>
+            </tr>
+            </thead>
+            <tbody>
+
+            <% buttons.forEach(function(btn){ %>
+                <tr>
+                    <td><%=btn.name %></td>
+                    <td><%=btn.type %></td>
+                    <td><%=btn.key %></td>
+                    <td><%=btn.url %></td>
+                    <td>无</td>
+                    <td>
+                        <a href="javascript:void(0);">查看二级按钮</a>
+                    </td>
+                </tr>
+            <% }) %>
+
+
+
+            </tbody>
+        </table>
+    </div>
+
+
+</div> <!-- /container -->
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <form method="post" action="/admin/menu/add" data-role="form">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="myModalLabel">修改添加按钮</h4>
+            </div>
+            <div class="modal-body">
+
+                    <h4>修改以下的模板</h4>
+                    <textarea name="buttonJson" class="form-control" style="height: 200px;">
+                        [
+                        {
+                        "type": "click",
+                        "name": "我要订餐",
+                        "key": "V1001_ORDER"
+                        },
+                        {
+                        "name": "我",
+                        "sub_button": [
+                        {
+                        "type": "view",
+                        "name": "我的订单",
+                        "url": "http://www.soso.com/"
+                        },
+                        {
+                        "type": "view",
+                        "name": "维权",
+                        "url": "http://v.qq.com/"
+                        }
+                        ]
+                        },
+                        {
+                        "type": "click",
+                        "name": "下载客户端",
+                        "key": "V1001_DOWLOAD"
+                        }
+                        ]
+                    </textarea>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                <button type="submit" class="btn btn-primary" >保存</button>
+            </div>
+            </form>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
 
 <%- include ../common/footer.html %>
 </body>

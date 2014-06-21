@@ -22,7 +22,6 @@ weixin.appsecret = "a4fb4de2d7353ef5d5d59d582388bca3";
 
 
 
-
 var apiWx = new weixin.API(weixin.appid,weixin.appsecret);
 
 //转发

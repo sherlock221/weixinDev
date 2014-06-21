@@ -2,11 +2,15 @@ var menuRouter    = require("./memuRouter");
 var Result = require("./result/result");
 
 //后台配置
-var ADMIN = {
-    userName : "adminsuper002",
-    passWord : "nicaobudaowodemima"
-};
+//var ADMIN = {
+//    userName : "adminsuper002",
+//    passWord : "nicaobudaowodemima"
+//};
 
+var ADMIN = {
+    userName : "ad",
+    passWord : "123"
+};
 
 var AdminRouter = function(app,weixin,apiWx){
     /**
@@ -16,12 +20,23 @@ var AdminRouter = function(app,weixin,apiWx){
     app.all("/admin/*",function(req,res,next){
         console.log("进入后台过滤器");
         console.log(req.method);
+        var user = req.session.user;
+
         if(req.path == "/admin/login" ){
             next();
         }
-        else{
-            res.render("admin/login",{code : Result.ROLE_ERROR,err:"您没有权限,请重新登录!"});
+        else if(user){
+            next();
         }
+        else{
+            res.redirect("/admin/login");
+        }
+    });
+
+
+    //首页
+    app.get("/admin/index",function(req,res){
+        res.render("admin/home/index");
     });
 
     //登录页
@@ -29,12 +44,33 @@ var AdminRouter = function(app,weixin,apiWx){
         res.render("admin/login",{code : Result.ROLE_ERROR,err:""});
     });
     //创建按钮页面
-    app.get("/admin/menu/add",function(){
+    app.get("/admin/menu/add",function(req,res){
         res.render("admin/menu/createMenu")
     });
     //查询按钮页面
-    app.get("/admin/menu",function(req,res){
-        res.render("admin/menu/menuList");
+    app.get("/admin/menu",function(req,res,next){
+        var  ts = {
+            buttons : []
+        };
+
+        //查找按钮
+        menuRouter.findAll(apiWx,function(err,cb){
+
+            if(err){
+                if(err.message == "menu no exist"){
+
+                }
+                else{
+                    next(err)
+                    return;
+                }
+            }
+            else{
+                console.log(cb.menu.button);
+                ts.buttons = cb.menu.button;
+            }
+            res.render("admin/menu/menuList",ts);
+        });
     });
 
     //登录 post
@@ -48,45 +84,45 @@ var AdminRouter = function(app,weixin,apiWx){
             res.render("admin/login",{code : Result.PARAM_ERROR, err : "用户名,密码错错误"});
         }
         else{
-            res.render("admin/menu/menuList");
+
+            //存入session
+            req.session.user = {
+                userName : userName,
+                passWord : passWord
+            };
+
+                //放入渲染全局
+                app.locals.user = req.session.user;
+                res.redirect("/admin/index");
         }
     });
 
+
     //创建按钮 post
-    app.post("/admin/menu/add",function(req,res){
-        var menu =  {
-            "button":[
-                {
-                    "type":"click",
-                    "name":"今日歌曲",
-                    "key":"V1001_TODAY_MUSIC"
-                },
-                {
-                    "type":"click",
-                    "name":"歌手简介",
-                    "key":"V1001_TODAY_SINGER"
-                },
-                {
-                    "name":"菜单",
-                    "sub_button":[
-                        {
-                            "type":"view",
-                            "name":"搜索",
-                            "url":"http://www.soso.com/"
-                        },
-                        {
-                            "type":"view",
-                            "name":"视频",
-                            "url":"http://v.qq.com/"
-                        },
-                        {
-                            "type":"click",
-                            "name":"赞一下我们",
-                            "key":"V1001_GOOD"
-                        }]
-                }]
+    app.post("/admin/menu/add",function(req,res,next){
+
+        var menu = {
+            button :[]
         };
-        menuRouter.create(apiWx,menu);
+
+        try{
+            menu.button = JSON.parse(req.body.buttonJson);
+        }
+        catch(e){
+            console.log("json 格式错误");
+            res.send("json格式错误!");
+            return;
+        }
+
+        menuRouter.create(apiWx,menu,function(err,me){
+            if(err){
+                next(err);
+            }
+            else{
+                console.log("按钮添加成功!");
+                res.redirect("/admin/menu");
+            }
+        });
     });
 
 

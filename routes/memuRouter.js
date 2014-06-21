@@ -2,11 +2,24 @@
  * 微信菜单管理
  */
 
-exports.create = function(api,menu){
-    api.createMenu(menu,function (err, me) {
+exports.create = function(api,menu,callBack){
+    api.removeMenu(function(err,me){
         if(err){
-            console.log(err);
+            next(err);
         }
-        console.log(me);
+        else{
+            console.log("删除成功!");
+            api.createMenu(menu,function (err, me) {
+                 console.log(me);
+                callBack(err,me);
+            });
+        }
     });
+
 };
+
+exports.findAll = function(api,callBack){
+    api.getMenu(callBack);
+};
+
+
