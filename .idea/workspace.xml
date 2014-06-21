@@ -2,14 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="78624268-b262-4482-a96d-f2ecd3c54517" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/admin/home/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/main.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/admin/common/nav.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/loading.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/artTemplate.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/admin/common/message.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/util.js" />
+      <change type="DELETED" beforePath="D:\work\weixinDev\views\admin\menu\createMenu.html" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/adminRouter.js" afterPath="$PROJECT_DIR$/routes/adminRouter.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/admin/common/header.html" afterPath="$PROJECT_DIR$/views/admin/common/header.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/memuRouter.js" afterPath="$PROJECT_DIR$/routes/memuRouter.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/admin/common/footer.html" afterPath="$PROJECT_DIR$/views/admin/common/footer.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/admin/home/index.html" afterPath="$PROJECT_DIR$/views/admin/home/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/main.css" afterPath="$PROJECT_DIR$/public/css/main.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/admin/menu/menuList.html" afterPath="$PROJECT_DIR$/views/admin/menu/menuList.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/router.js" afterPath="$PROJECT_DIR$/routes/router.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/admin/common/nav.html" afterPath="$PROJECT_DIR$/views/admin/common/nav.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="weixinDev.iws" />
@@ -36,25 +39,18 @@
       <file leaf-file-name="adminRouter.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/routes/adminRouter.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="115" column="0" selection-start="2723" selection-end="2723" vertical-scroll-proportion="3.9940119" vertical-offset="966" max-vertical-offset="2740">
-              <folding />
+            <state line="10" column="20" selection-start="222" selection-end="222" vertical-scroll-proportion="0.39119172" vertical-offset="49" max-vertical-offset="2360">
+              <folding>
+                <element signature="e#1230#1695#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="menuList.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/admin/menu/menuList.html">
+      <file leaf-file-name="result.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/routes/result/result.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="66" column="25" selection-start="1889" selection-end="1889" vertical-scroll-proportion="-45.517242" vertical-offset="0" max-vertical-offset="2240">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="memuRouter.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/routes/memuRouter.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="15" selection-start="268" selection-end="268" vertical-scroll-proportion="0.0" vertical-offset="66" max-vertical-offset="620">
+            <state line="25" column="0" selection-start="622" selection-end="622" vertical-scroll-proportion="0.0" vertical-offset="286" max-vertical-offset="620">
               <folding />
             </state>
           </provider>
@@ -89,7 +85,6 @@
         <option value="$PROJECT_DIR$/node_modules/weixin-api/lib/common.js" />
         <option value="$PROJECT_DIR$/node_modules/weixin-api/node_modules/urllib/lib/urllib.js" />
         <option value="$PROJECT_DIR$/views/menu/createMenu.html" />
-        <option value="$PROJECT_DIR$/views/admin/common/footer.html" />
         <option value="$PROJECT_DIR$/views/admin/menu/login.html" />
         <option value="$PROJECT_DIR$/public/css/login.css" />
         <option value="$PROJECT_DIR$/views/admin/menu/createMenu.html" />
@@ -97,14 +92,18 @@
         <option value="$PROJECT_DIR$/routes/router.js" />
         <option value="$PROJECT_DIR$/views/admin/index.html" />
         <option value="$PROJECT_DIR$/views/admin/menu/index.html" />
-        <option value="$PROJECT_DIR$/views/admin/home/index.html" />
         <option value="$PROJECT_DIR$/app.js" />
-        <option value="$PROJECT_DIR$/views/admin/common/nav.html" />
         <option value="$PROJECT_DIR$/views/admin/common/header.html" />
-        <option value="$PROJECT_DIR$/public/css/main.css" />
         <option value="$PROJECT_DIR$/routes/memuRouter.js" />
-        <option value="$PROJECT_DIR$/routes/adminRouter.js" />
+        <option value="$PROJECT_DIR$/public/css/main.css" />
+        <option value="$PROJECT_DIR$/public/js/artTemplate.js" />
+        <option value="$PROJECT_DIR$/views/admin/common/footer.html" />
+        <option value="$PROJECT_DIR$/views/admin/common/message.html" />
+        <option value="$PROJECT_DIR$/views/admin/common/nav.html" />
+        <option value="$PROJECT_DIR$/public/js/util.js" />
         <option value="$PROJECT_DIR$/views/admin/menu/menuList.html" />
+        <option value="$PROJECT_DIR$/views/admin/home/index.html" />
+        <option value="$PROJECT_DIR$/routes/adminRouter.js" />
       </list>
     </option>
   </component>
@@ -172,6 +171,46 @@
               <option name="myItemId" value="weixinDev" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="weixinDev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="weixinDev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="weixinDev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="weixinDev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="weixinDev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="weixinDev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
@@ -191,11 +230,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\work\weixinDev\views\admin\common" />
+      <recent name="D:\work\weixinDev\public\js" />
+      <recent name="D:\work\weixinDev\public\img" />
       <recent name="D:\work\weixinDev\public\css" />
       <recent name="D:\work\weixinDev\views\admin\menu" />
-      <recent name="D:\work\weixinDev\views\admin\common" />
-      <recent name="D:\work\weixinDev\public\bootstrap3" />
-      <recent name="D:\work\weixinDev\public\js" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\work\weixinDev\views\admin\home" />
@@ -291,7 +330,11 @@
       <created>1403334845360</created>
       <updated>1403334845360</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="创建二级菜单&#10;">
+      <created>1403345438212</created>
+      <updated>1403345438212</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -305,10 +348,10 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32899022" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31598514" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.41205212" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.41205212" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32736155" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32736155" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -337,6 +380,12 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/routes/result/result.js</url>
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+      </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
@@ -345,30 +394,10 @@
           <properties />
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="31" />
+      <option name="time" value="33" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="28" selection-start="177" selection-end="177" vertical-scroll-proportion="0.0" vertical-offset="160" max-vertical-offset="720" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/constants/sysRoles.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1700" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/constants/methods.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="867" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/constants/common.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="238" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="35" column="21" selection-start="790" selection-end="790" vertical-scroll-proportion="0.62882656" vertical-offset="102" max-vertical-offset="918" />
@@ -555,13 +584,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/admin/common/footer.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="52" selection-start="252" selection-end="252" vertical-scroll-proportion="0.19672132" vertical-offset="0" max-vertical-offset="305">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/css/login.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="31" column="24" selection-start="625" selection-end="625" vertical-scroll-proportion="0.4011976" vertical-offset="486" max-vertical-offset="900">
@@ -590,13 +612,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/result/result.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="27" selection-start="120" selection-end="120" vertical-scroll-proportion="0.0" vertical-offset="100" max-vertical-offset="620">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../node_modules/express/lib/router/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="198" column="0" selection-start="4802" selection-end="4802" vertical-scroll-proportion="0.0" vertical-offset="3849" max-vertical-offset="7780">
@@ -604,30 +619,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/admin/common/header.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="44" selection-start="196" selection-end="196" vertical-scroll-proportion="-2.7586207" vertical-offset="0" max-vertical-offset="320">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../node_modules/express/lib/router/route.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="105" column="5" selection-start="1826" selection-end="1826" vertical-scroll-proportion="0.25" vertical-offset="2009" max-vertical-offset="3940">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/admin/home/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="38" selection-start="361" selection-end="361" vertical-scroll-proportion="-9.655172" vertical-offset="40" max-vertical-offset="620">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="20" selection-start="141" selection-end="141" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="300">
           <folding />
         </state>
       </provider>
@@ -646,23 +640,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/router.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="7" selection-start="1382" selection-end="1382" vertical-scroll-proportion="0.0" vertical-offset="996" max-vertical-offset="1600">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/weixin-api/lib/common.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="220" column="24" selection-start="4985" selection-end="4995" vertical-scroll-proportion="0.5904059" vertical-offset="4240" max-vertical-offset="22020">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/admin/common/nav.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="33" selection-start="527" selection-end="527" vertical-scroll-proportion="-0.4041096" vertical-offset="318" max-vertical-offset="640">
           <folding />
         </state>
       </provider>
@@ -681,31 +661,116 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/admin/menu/createMenu.html">
+    <entry file="file://$PROJECT_DIR$/public/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="0" selection-start="145" selection-end="145" vertical-scroll-proportion="0.59016395" vertical-offset="0" max-vertical-offset="360">
+        <state line="19" column="18" selection-start="324" selection-end="324" vertical-scroll-proportion="0.0" vertical-offset="186" max-vertical-offset="840">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/memuRouter.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="15" selection-start="268" selection-end="268" vertical-scroll-proportion="0.0" vertical-offset="66" max-vertical-offset="620">
+        <state line="12" column="15" selection-start="268" selection-end="268" vertical-scroll-proportion="0.4507772" vertical-offset="66" max-vertical-offset="620">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/template.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="20" selection-start="0" selection-end="13383" vertical-scroll-proportion="0.48257372" vertical-offset="0" max-vertical-offset="13000">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/artTemplate.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="159" column="6" selection-start="3540" selection-end="3540" vertical-scroll-proportion="0.622291" vertical-offset="2979" max-vertical-offset="13080">
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/admin/common/footer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="0" selection-start="419" selection-end="419" vertical-scroll-proportion="0.5602241" vertical-offset="0" max-vertical-offset="357">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/router.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="63" column="0" selection-start="1485" selection-end="1485" vertical-scroll-proportion="0.68393785" vertical-offset="996" max-vertical-offset="1600">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/admin/common/message.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="6" selection-start="240" selection-end="240" vertical-scroll-proportion="0.1744186" vertical-offset="0" max-vertical-offset="344">
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/admin/common/header.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="0" selection-start="151" selection-end="151" vertical-scroll-proportion="0.16806723" vertical-offset="0" max-vertical-offset="357">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/admin/common/nav.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="21" selection-start="1027" selection-end="1027" vertical-scroll-proportion="0.47093022" vertical-offset="218" max-vertical-offset="640">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/admin/menu/menuList.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="66" column="25" selection-start="1889" selection-end="1889" vertical-scroll-proportion="-45.517242" vertical-offset="0" max-vertical-offset="2240">
+        <state line="12" column="27" selection-start="182" selection-end="186" vertical-scroll-proportion="-2.0689654" vertical-offset="180" max-vertical-offset="3100">
+          <folding>
+            <element signature="n#style#0;n#button#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1403365450956" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1403365450956" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/admin/home/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="33" selection-start="155" selection-end="155" vertical-scroll-proportion="0.3488372" vertical-offset="40" max-vertical-offset="620">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/util.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="23" selection-start="325" selection-end="325" vertical-scroll-proportion="0.536193" vertical-offset="0" max-vertical-offset="16620">
+          <folding>
+            <element signature="e#0#147#0" expanded="false" />
+            <element signature="e#580#858#0" expanded="false" />
+            <element signature="e#914#1062#0" expanded="false" />
+            <element signature="e#1084#1576#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/result/result.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="0" selection-start="622" selection-end="622" vertical-scroll-proportion="0.0" vertical-offset="286" max-vertical-offset="620">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/adminRouter.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="115" column="0" selection-start="2723" selection-end="2723" vertical-scroll-proportion="3.9940119" vertical-offset="966" max-vertical-offset="2740">
-          <folding />
+        <state line="10" column="20" selection-start="222" selection-end="222" vertical-scroll-proportion="0.39119172" vertical-offset="49" max-vertical-offset="2360">
+          <folding>
+            <element signature="e#1230#1695#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

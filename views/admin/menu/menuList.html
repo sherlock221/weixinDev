@@ -8,9 +8,14 @@
 
 <%- include ../common/nav.html %>
 
+
+
 <div class="container  mt45">
 
-    <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+    <%- include ../common/message.html  %>
+
+
+    <button style="margin-bottom: 15px;" id="addUpBtn" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
        修改/添加按钮
     </button>
 
@@ -26,21 +31,7 @@
                 <th>操作</th>
             </tr>
             </thead>
-            <tbody>
-
-            <% buttons.forEach(function(btn){ %>
-                <tr>
-                    <td><%=btn.name %></td>
-                    <td><%=btn.type %></td>
-                    <td><%=btn.key %></td>
-                    <td><%=btn.url %></td>
-                    <td>无</td>
-                    <td>
-                        <a href="javascript:void(0);">查看二级按钮</a>
-                    </td>
-                </tr>
-            <% }) %>
-
+            <tbody id="menu-list">
 
 
             </tbody>
@@ -54,7 +45,7 @@
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
-            <form method="post" action="/admin/menu/add" data-role="form">
+            <form method="post" action="/admin/menu/add" data-role="form"  id="addMenuForm"  onsubmit="return pForm();">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                 <h4 class="modal-title" id="myModalLabel">修改添加按钮</h4>
@@ -104,4 +95,56 @@
 
 <%- include ../common/footer.html %>
 </body>
+
+<script type="text/html" id="buttonMenuTemplate">
+    <@for (var i=0;i<buttons.length;i++) {@>
+        <tr>
+            <td><@=buttons[i].name @></td>
+            <td><@=buttons[i].type @></td>
+            <td><@=buttons[i].key @></td>
+            <td><@=buttons[i].url @></td>
+            <td>无</td>
+            <td>
+                <a href="javascript:void(0);">查看二级按钮</a>
+            </td>
+        </tr>
+    <@}@>
+</script>
+
+<script type="text/javascript">
+    $(function(){
+        toggleNav("btn");
+        reList();
+    });
+
+    function reList(){
+        //渲染模板
+        AjaxUtil.fillJsonToTemplate("/admin/menu",$("#menu-list"),$("#buttonMenuTemplate"),function(res){
+        });
+    }
+
+    function  pForm(){
+        //提交
+        AjaxUtil.postForm("#addMenuForm",function(res){
+            var message = "";
+            if(res.code == Results.SUCCESS){
+                message = "添加成功!";
+                $("#myModal").modal("hide");
+                reList();
+            }
+            else if(res.code == Results.PARAM_ERROR){
+                message = "JSON格式错误!";
+            }
+            else if(res.code == Results.DB_ERROR){
+                message = "服务器异常";
+            }
+
+            $('#message').find(".at-msg").html(message);
+            $('#message').show();
+
+        });
+        return false;
+    }
+
+</script>
 </html>

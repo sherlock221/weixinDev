@@ -9,7 +9,7 @@ var Result = require("./result/result");
 
 var ADMIN = {
     userName : "ad",
-    passWord : "123"
+    passWord : "sherlock221b"
 };
 
 var AdminRouter = function(app,weixin,apiWx){
@@ -47,29 +47,31 @@ var AdminRouter = function(app,weixin,apiWx){
     app.get("/admin/menu/add",function(req,res){
         res.render("admin/menu/createMenu")
     });
+
     //查询按钮页面
+    app.get("/admin/menuPage",function(req,res){
+        res.render("admin/menu/menuList");
+    });
+
+    //查询按钮列表
     app.get("/admin/menu",function(req,res,next){
         var  ts = {
             buttons : []
         };
-
         //查找按钮
         menuRouter.findAll(apiWx,function(err,cb){
-
             if(err){
                 if(err.message == "menu no exist"){
-
                 }
                 else{
-                    next(err)
-                    return;
+                    next(err);
                 }
             }
             else{
                 console.log(cb.menu.button);
                 ts.buttons = cb.menu.button;
             }
-            res.render("admin/menu/menuList",ts);
+            res.json(ts);
         });
     });
 
@@ -80,7 +82,7 @@ var AdminRouter = function(app,weixin,apiWx){
         if(userName == "" || passWord == ""){
             res.render("admin/login",{code : Result.PARAM_ERROR, err : "请输入用户名,密码"});
         }
-        else if( ADMIN.userName != userName && ADMIN.passWord != passWord){
+        else if( ADMIN.userName != userName || ADMIN.passWord != passWord){
             res.render("admin/login",{code : Result.PARAM_ERROR, err : "用户名,密码错错误"});
         }
         else{
@@ -97,7 +99,6 @@ var AdminRouter = function(app,weixin,apiWx){
         }
     });
 
-
     //创建按钮 post
     app.post("/admin/menu/add",function(req,res,next){
 
@@ -109,8 +110,7 @@ var AdminRouter = function(app,weixin,apiWx){
             menu.button = JSON.parse(req.body.buttonJson);
         }
         catch(e){
-            console.log("json 格式错误");
-            res.send("json格式错误!");
+            res.json({ code : Result.PARAM_ERROR, message : "json格式错误!请检查"});
             return;
         }
 
@@ -120,7 +120,7 @@ var AdminRouter = function(app,weixin,apiWx){
             }
             else{
                 console.log("按钮添加成功!");
-                res.redirect("/admin/menu");
+                res.json({code : Result.SUCCESS});
             }
         });
     });
