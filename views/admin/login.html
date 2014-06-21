@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>登录 - 微信开发后台管理</title>
+    <%- include /common/header.html %>
+    <link  rel="stylesheet" href="/css/login.css"/>
+</head>
+<body>
+
+    <div class="container">
+
+        <% if(err) { %>
+        <div class="alert alert-danger alert-dismissable" >
+            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+            <strong>错误</strong> <%=err %>
+        </div>
+        <%}%>
+
+        <form class="form-signin" role="form" action="/admin/login" method="post">
+            <h2 class="form-signin-heading">登录吧,少年</h2>
+            <input type="text" class="form-control" placeholder="用户名"  name="userName" required autofocus>
+            <input type="password" class="form-control" placeholder="密码" name="passWord" required>
+            <label class="checkbox">
+                <input type="checkbox" value="remember-me"> 记住我
+            </label>
+            <button class="btn btn-lg btn-primary btn-block" type="submit">快速登录</button>
+        </form>
+
+    </div>
+
+
+
+
+
+<%- include /common/footer.html %>
+</body>
+</html>

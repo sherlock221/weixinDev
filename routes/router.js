@@ -11,14 +11,25 @@ var textMsgRouter = require("./textMsgRouter");
 var imgMsgRouter = require("./imgMsgRouter");
 var urlMsgRouter = require("./urlMsgRouter");
 var eventMsgRouter = require("./eventMsgRouter");
+var menuRouter    = require("./memuRouter");
+var Result = require("./result/result");
+var AdminRouter = require("./adminRouter");
 
 //微信配置
 weixin.token = "sherlock221b";
+weixin.appid = "wx6699bd54f2939d30";
+weixin.appsecret = "a4fb4de2d7353ef5d5d59d582388bca3";
+
+
+
+
+var apiWx = new weixin.API(weixin.appid,weixin.appsecret);
 
 //转发
 module.exports.use = function(app){
     //验证身份
     app.get('/', function(req, res) {
+        console.log("进入签名");
         // 签名成功
         if (weixin.checkSignature(req)) {
             res.send(200, req.query.echostr);
@@ -52,13 +63,13 @@ module.exports.use = function(app){
         eventMsgRouter.handler(weixin,msg);
     });
 
-
     //监听微信post
     app.post('/', function(req, res) {
         // loop
         weixin.loop(req, res);
     });
 
-
+    //后台部分
+    new  AdminRouter(app,weixin,apiWx);
 };
 
