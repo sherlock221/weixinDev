@@ -29,11 +29,11 @@ module.exports = {
 //	'static_host': config['static_host'] || 'http://obullxl.github.io',
 	
 	/* 数据库配置参数 */
-	'db_host': "112.124.124.196",
+	'db_host': "localhost",
 	'db_port': "3306",
-	'db_name': "xxx",
-	'db_user': "xx",
-	'db_passwd': "xxx",
+	'db_name': "weixin",
+	'db_user': "root",
+	'db_passwd': "",
 	'db_charset': 'UTF8',
 	'db_conn_limit': 5,
 	

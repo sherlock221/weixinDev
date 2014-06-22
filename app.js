@@ -5,13 +5,13 @@ var favicon = require('static-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
-var session = require('express-session');
 var compress = require("compression");
 var ejs   = require("ejs");
 var middleWareUtil  = require("./util/middleWareUtil");
 var router = require("./routes/router");
 var log4j = require("./log");
 
+var Session = require("./util/session");
 
 var app = express();
 
@@ -24,13 +24,12 @@ app.set('view engine', 'html');
 
 //中间件使用
 //gzip / deflate
-log4j.use(app);
+//log4j.use(app);
 app.use(favicon());
 //log4j代替 需要查看请求状态请开启
 app.use(logger('dev'));
 app.use(bodyParser());
 app.use(cookieParser());
-app.use(session({ secret: "keyboard cat" }));
 app.use(express.static(path.join(__dirname, 'public')));
 
 //app.use(compress);
@@ -38,6 +37,9 @@ app.use(express.static(path.join(__dirname, 'public')));
 //app.use(middleWareUtil.consoleHttpParam);
 //路由配置
 router.use(app);
+
+//设置全局用户管理对象
+global.users =  new Session();
 
 
 //配置404页面

@@ -17,9 +17,8 @@ var AdminRouter = require("./adminRouter");
 
 //微信配置
 weixin.token = "sherlock221b";
-weixin.appid = "wx6699bd54f2939d30";
-weixin.appsecret = "a4fb4de2d7353ef5d5d59d582388bca3";
-
+weixin.appid = "wxad59ac533fbe3a9c";
+weixin.appsecret = "d28e5d385896533e7f739c94541ebe27";
 
 
 var apiWx = new weixin.API(weixin.appid,weixin.appsecret);
