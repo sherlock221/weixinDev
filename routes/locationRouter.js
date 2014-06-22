@@ -11,18 +11,18 @@ exports.handler = function (wx, msg) {
     var user = new User(msg.fromUserName,msg.latitude,msg.longitude,msg.precision);
     global.users.save(user.id,user);
     console.log(user);
+    //更新位置
     baseService.location();
 
-    var resMsg = {
-        fromUserName: msg.toUserName,
-        toUserName: msg.fromUserName,
-        msgType: "music",
-        title: "音乐标题",
-        description: "音乐描述",
-        musicUrl: "音乐url",
-        HQMusicUrl: "高质量音乐url",
-        funcFlag: 0
-    };
+    //查询餐馆
+    baseService.order(msg,function(err,content){
+        if(err){
+            console.log(err);
+        }
+        else{
+            wx.sendMsg(content);
+        }
+    });
 
-    wx.sendMsg(resMsg);
+    wx.sendMsg({});
 };

@@ -11,7 +11,7 @@ exports.handler =function(wx,msg){
         fromUserName : msg.toUserName,
         toUserName : msg.fromUserName,
         msgType : "text",
-        content : "您在说什么 我不太明白!",
+        content : "发送共享位置 就可以查看附近餐馆!",
         funcFlag : 0
     };
 
