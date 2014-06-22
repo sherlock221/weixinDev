@@ -13,7 +13,6 @@ exports.handler = function (wx, msg) {
     console.log(user);
     baseService.location();
 
-
     var resMsg = {
         fromUserName: msg.toUserName,
         toUserName: msg.fromUserName,

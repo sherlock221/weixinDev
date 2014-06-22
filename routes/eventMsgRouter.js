@@ -15,7 +15,14 @@ exports.handler = function(wx,msg){
     else if(msg.event == "CLICK"){
         switch(msg.eventKey){
             case  "V_ORDER" :
-                baseService.order();
+                baseService.order(msg,function(err,content){
+                    if(err){
+                        console.log(err);
+                    }
+                    else{
+                        wx.sendMsg(content);
+                    }
+                });
                 break;
             case  "V_LAST" :
                 baseService.dowload();
