@@ -10,8 +10,9 @@ var ejs   = require("ejs");
 var middleWareUtil  = require("./util/middleWareUtil");
 var router = require("./routes/router");
 var log4j = require("./log");
+var session = require('express-session');
 
-var Session = require("./util/session");
+var SessionStore = require("./util/session");
 
 var app = express();
 
@@ -30,6 +31,7 @@ app.use(favicon());
 app.use(logger('dev'));
 app.use(bodyParser());
 app.use(cookieParser());
+app.use(session({ secret: "keyboard cat" }));
 app.use(express.static(path.join(__dirname, 'public')));
 
 //app.use(compress);
@@ -39,7 +41,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 router.use(app);
 
 //设置全局用户管理对象
-global.users =  new Session();
+global.users =  new SessionStore();
 
 
 //配置404页面

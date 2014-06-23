@@ -67,6 +67,9 @@ module.exports.use = function(app){
         weixin.loop(req, res);
     });
 
+    //获得餐馆列表页面
+   // app.get("/restarurat",)
+
     //后台部分
     new  AdminRouter(app,weixin,apiWx);
 };

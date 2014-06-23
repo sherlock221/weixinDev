@@ -3,38 +3,40 @@
  * @type {exports}
  */
 
+
+var  Text = {
+
+      //默认文本
+      defaults : "分享位置即可查看附近外卖并进行订餐",
+      //查看目前在线用户数量
+      getUsers : function(){
+            var length = global.users.size();
+            return "当前在线用户数量 : " + length;
+      }
+};
+
+
+
 exports.handler =function(wx,msg){
     console.log("文本事件",JSON.stringify(msg));
-
     //默认文本
-      var resMsg = {
-        fromUserName : msg.toUserName,
-        toUserName : msg.fromUserName,
-        msgType : "text",
-        content : "发送共享位置 就可以查看附近餐馆!",
-        funcFlag : 0
-    };
-
     switch (msg.content){
-        case   '文本':
+        case   '12908':
             resMsg = {
                 fromUserName : msg.toUserName,
                 toUserName : msg.fromUserName,
                 msgType : "text",
-                content : "这是文本回复",
+                content : Text.getUsers(),
                 funcFlag : 0
             };
             break;
-        case    '音乐':
-            // 返回音乐消息
+
+        default :
             resMsg = {
                 fromUserName : msg.toUserName,
                 toUserName : msg.fromUserName,
-                msgType : "music",
-                title : "音乐标题",
-                description : "音乐描述",
-                musicUrl : "音乐url",
-                HQMusicUrl : "高质量音乐url",
+                msgType : "text",
+                content : Text.defaults,
                 funcFlag : 0
             };
             break;

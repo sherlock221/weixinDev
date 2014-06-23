@@ -51,4 +51,9 @@ Session.prototype.destroy = function (key) {
     return null;
 };
 
+Session.prototype.size = function (key) {
+    return this.map.size();
+};
+
+
 module.exports = Session;
