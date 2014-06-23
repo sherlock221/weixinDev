@@ -14,10 +14,10 @@ var BaseService = function () {
 BaseService.prototype.order = function (msg,callBack) {
     console.log("我要订餐");
     var url =  this.resListUrl;
-    //var latitude = global.users.latitude;
-    //var longitude = global.users.longitude;
-     var latitude = "34.2523800";
-     var longitude = "108.9897520";
+    var latitude = global.users.latitude;
+    var longitude = global.users.longitude;
+    // var latitude = "34.2523800";
+    // var longitude = "108.9897520";
 
     var data = {
         method : "GET",
