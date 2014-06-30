@@ -2,9 +2,8 @@ var Result = require("./result/result");
 var baseService = require("./../services/baseService");
 var FunwebRouter = function(app,weixin,apiWx){
 
-
     //获得菜品详细
-    app.get("/product",function(req,res){
+    app.get("/product",function(req,res,next){
         var pageSize = req.query.pageSize;
         var pageNum = req.query.pageNum;
         var categoryId = req.query.categoryId;
@@ -16,11 +15,9 @@ var FunwebRouter = function(app,weixin,apiWx){
                 res.json(data);
             }
         });
-
-
     });
 
-    //获菜品表页面
+    //获菜品页面
     app.get("/dishesPage",function(req,res){
         var supplierId = req.query.supplierId;
         var supplierName = req.query.supplierName;
@@ -52,7 +49,15 @@ var FunwebRouter = function(app,weixin,apiWx){
 
     //获得餐馆页面
     app.get("/restaruratlistPage",function(req,res){
-        res.render("funweb/restaurantList");
+        var latitude = req.query.latitude;
+        var longitude = req.query.longitude;
+
+        var result = {
+            latitude : latitude,
+            longitude : longitude
+        };
+
+        res.render("funweb/restaurantList",result);
     });
 
     //获得附近餐馆

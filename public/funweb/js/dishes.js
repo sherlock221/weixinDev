@@ -1,6 +1,6 @@
 Zepto(function($) {
 	// 获得url参数
-	var getVal = getRequest;
+	var getVal = getServerReq;
     // 餐馆id
 	var supplierId =  getVal('supplierId');
 	// 餐馆名字

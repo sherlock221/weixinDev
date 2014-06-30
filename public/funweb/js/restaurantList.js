@@ -1,16 +1,16 @@
 Zepto(function($) {
 	// 获取请求url中的参数
-	var parameters = getRequest();
+	var parameters = getServerReq;
 	window.isRequest = false;
 	window.ismyRequest = false;
-	var latitude = parameters['latitude'];
-	var longitude = parameters['longitude'];
-	window.deviceId = parameters['deviceId'];
-	window.pguid = parameters['pguid'];
-	window.hotarea = parameters['hotarea'];
-	window.cityCode = parameters['cityCode'];
-	window.cityName = parameters['cityName'];
-	var flag = parameters['flag'];
+	var latitude = parameters('latitude');
+	var longitude = parameters('longitude');
+	window.deviceId = parameters('deviceId');
+	window.pguid = parameters('pguid');
+	window.hotarea = parameters('hotarea');
+	window.cityCode = parameters('cityCode');
+	window.cityName = parameters('cityName');
+	var flag = parameters('flag');
 
     var url = getRootPath() + "/restaruratlist";
     restaurant.load(url,latitude,longitude);
@@ -301,7 +301,7 @@ var restaurant = {
 							});
 							var bb = $('<a/>', {
 								class : 'resitem_a',
-								href : getRootPath() + "/cloudofcampus/dishes.html?supplierId=" + supplierId
+								href : getRootPath() + "/dishesPage?supplierId=" + supplierId
 										+ "&supplierName=" + encodeURI(supplierName) + "&deliveryLeastValue="
 										+ deliveryLeastValue + "&deviceId=" + deviceId + "&deliveryCharge="
 										+ deliveryCharge + "&pguid=" + pguid
