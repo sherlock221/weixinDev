@@ -17,6 +17,7 @@ var SessionStore = require("./util/session");
 var app = express();
 
 var Result = require("./routes/result/result");
+var address =require("./util/address");
 
 //让ejs使用扩展名html文件
 app.engine('.html', ejs.__express);
@@ -69,9 +70,9 @@ app.use(function(err, req, res, next){
 
 
 //获得服务器ip地址
-var address =require("./util/address");
-console.log(address.getLocalIP("","IPv4"));
-
+//var ip = address.getLocalIP();
+//console.log(ip);
+global.serverAddress = ip;
 
 //常量
 var showErrOnConsole = true;

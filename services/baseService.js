@@ -10,6 +10,11 @@ var BaseService = function () {
     this.productUrl = "http://www.flymeal.cn/android/supplier!loadProductByCategory.action";
     //个人信息
     this.userInfo = "http://www.flymeal.cn/android/order!getOrdersByDeviceId.action?deviceId=1234567890";
+
+    //列表
+    this.listImg  = global.serverAddress+"/funweb/img/list-desc.jpg";
+    //活动
+    this.eventImg  = global.serverAddress+"/funweb/img/list-event.jpg";
 };
 
 
@@ -126,8 +131,8 @@ BaseService.prototype.order = function (msg,callBack) {
                 articles.push({
                     title : "附近外卖(共"+total+"家)",
                     description : "",
-                    picUrl : "http://www.flymeal.cn/upload/pic/present/usbminifangshuishoudian.jpg",
-                    url : "http://www.flymeal.cn/cloudofcampus/restaurantList.html?latitude="+latitude+"&longitude="+longitude
+                    picUrl : this.listImg,
+                    url : global.serverAddress+"/restaruratlistPage?latitude="+latitude+"&longitude="+longitude
                 });
 
                 //添加列表

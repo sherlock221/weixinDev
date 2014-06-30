@@ -1,69 +1,49 @@
 var os = require('os');
 
-/**
-  * 获取指定网卡的IP
-  * @param name 网卡名
-  * @param family IP版本 IPv4 or IPv5
-  * @returns ip
-  */
-exports.getLocalIP = function (name, family) {
-    //所有的网卡
+
+exports.getLocalIP = function(){
+    var map = [];
     var ifaces = os.networkInterfaces();
-
-
-    if(family)
-        family = "IPv4";
-
-
-    //移除loopback,没多大意义
+    console.log(ifaces);
     for (var dev in ifaces) {
-        if (dev.toLowerCase().indexOf('loopback') != -1) {
-            delete  ifaces[dev];
-            continue;
-        }
-    }
-
-
-    var ip = null;
-    family = family.toUpperCase();
-
-
-    var iface = null;
-    if (name == null) {
-        for (var dev in ifaces) {
-            ifaces[dev].forEach(function (details) {
-                if (details.family.toUpperCase() === family) {
+        if (dev.indexOf('eth0') != -1) {
+            var tokens = dev.split(':');
+            var dev2 = null;
+            if (tokens.length == 2) {
+                dev2 = 'eth1:' + tokens[1];
+            } else if (tokens.length == 1) {
+                dev2 = 'eth1';
+            }
+            if (null == ifaces[dev2]) {
+                continue;
+            }
+            // 找到eth0和eth1分别的ip
+            var ip = null, ip2 = null;
+            ifaces[dev].forEach(function(details) {
+                if (details.family == 'IPv4') {
                     ip = details.address;
                 }
             });
-            break;
-        }
-        return ip;
-    }
-    var nameList = name.split(',');
-    for (var i = 0, j = nameList.length; i < j; i++) {
-        var key = nameList[i];
-
-
-        //指定的链接不存在
-        if (ifaces[key] == null) {
-            continue;
-        }
-
-
-        ifaces[key].forEach(function (details) {
-            if (details.family.toUpperCase() === family) {
-                ip = details.address;
+            ifaces[dev2].forEach(function(details) {
+                if (details.family == 'IPv4') {
+                    ip2 = details.address;
+                }
+            });
+            if (null == ip || null == ip2) {
+                continue;
             }
-        });
-        if (ip != null) {
-            break;
+            // 将记录添加到map中去
+            if (ip.indexOf('10.') == 0 ||
+                ip.indexOf('172.') == 0 ||
+                ip.indexOf('192.') == 0) {
+                map.push({"intranet_ip" : ip, "internet_ip" : ip2});
+            } else {
+                map.push({"intranet_ip" : ip2, "internet_ip" : ip});
+            }
         }
     }
-    if (ip == null) {
-        ip = '127.0.0.1';
-        console.error('get ip error, return 127.0.0.1, please check');
-    }
+    return map;
+}
 
-    return ip;
-};
+
+
