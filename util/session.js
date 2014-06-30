@@ -31,7 +31,7 @@ Session.prototype.save = function (key, value) {
 Session.prototype.get = function (key) {
     for (var i = 0; i < this.map.length; i++) {
         if (this.map[i].key === key) {
-            return map[i].value;
+            return this. map[i].value;
         }
     }
     return  null;
