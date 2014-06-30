@@ -1,0 +1,44 @@
+<head>
+<meta charset="utf-8">
+<meta content="width=device-width,user-scalable=no" name="viewport">
+<meta name="viewport"
+	content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<title>市区列表</title>
+<link rel="stylesheet" href="new_file.css">
+
+<script src="js/zepto.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="js/selectArea.js"></script>
+
+</head>
+
+<body>
+	<div id='header' class="title_bar">
+        <img src="img/back.png" id="back">
+		<p class="title" id="select-title"></p>
+        <ul class="city" id="city">
+        	<li style="width:100%;"><a style="color:#777;">加载中...</a></li>
+        </ul>
+	</div>
+
+    <div id="pagethree">
+        <div style="top: 0; height: 50px; width: 100%; text-align: center; line-height: 50px; background: #F8F8F8;"></div>
+    </div>
+
+	<div data-role="page" id="content" style="padding:10px;">
+        <h2 class="title-base">热门区域</h2>
+        <ul class="area radioBase">
+            <input type="hidden" value name="area" />
+        </ul>
+	</div>
+     <!--底部弹出层-->
+     <div class="area-menu " id="area-menu">
+         <div class="list-header"></div>
+         <ul></ul>
+     </div>
+    <div id="mask" class="mask"></div>
+   	<div style="display: none;">
+		<script src="http://s9.cnzz.com/stat.php?id=2999942&web_id=2999942" language="JavaScript"></script>
+	</div>
+</body>
+</html>

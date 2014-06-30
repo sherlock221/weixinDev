@@ -1,0 +1,38 @@
+<head>
+<%- include /common/meta.html %>
+<%- include /common/header.html %>
+<title>菜品列表</title>
+<script type="text/javascript" src="/funweb/js/dishes.js"></script>
+</head>
+
+<body>
+	<div id='header' class="title_bar">
+		<p class="title"></p>
+	</div>
+
+	<div data-role="page" id="content">
+		<div class="listbottom"></div>
+		<div class="listbottom"></div>
+	</div>
+
+	<div class="cart_bar">
+		<div class="cart_container">
+			<a id="totalnum" data-role="button">0</a>
+			 <span class="sum">￥<span
+				class="total_price">0</span>元
+			</span> </span> <span class="unreach">还差<span id="unreach"></span>元起送
+			</span> <a href=" shoppingcar.html" id="nextstep" style="display: none">去结算</a>
+		</div>
+	</div>
+
+
+    <!-- 隐藏全局值 -->
+    <input type="hidden" id="supplierName" value="<%=supplierName %>"/>
+    <input type="hidden" id="supplierId" value="<%=supplierId %>"/>
+    <input type="hidden" id="deliveryLeastValue" value="<%=deliveryLeastValue %>"/>
+    <input type="hidden" id="deliveryCharge" value="<%=deliveryCharge %>"/>
+
+
+<%- include /common/footer.html %>
+</body>
+</html>

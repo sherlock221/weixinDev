@@ -4,10 +4,80 @@ var Message = require("./../models/message");
 var BaseService = function () {
     //餐馆列表
     this.resListUrl = "http://www.flymeal.cn/android/cloudOfCampus!loadRestaurantByLatitudeAndLongitude.action";
-    //餐馆
-    this.resUrl  = "http://www.flymeal.cn/android/supplier!loadProductByCategory.action?pageSize=1000&pageNum=0&categoryId=9635";
+    //菜品
+    this.dishesUrl  = "http://www.flymeal.cn/android/supplier!loadCategory.action";
+    //菜品明细
+    this.productUrl = "http://www.flymeal.cn/android/supplier!loadProductByCategory.action";
     //个人信息
     this.userInfo = "http://www.flymeal.cn/android/order!getOrdersByDeviceId.action?deviceId=1234567890";
+};
+
+
+
+//获得菜品明细
+BaseService.prototype.getProduct = function(pageNum,pageSize,categoryId,callBack){
+    var param = {
+        method : "GET",
+        dataType : "json",
+        data : {
+            pageSize  :   pageSize,
+            pageNum   : pageNum,
+            categoryId : categoryId
+        }
+    };
+    //发送餐馆列表请求
+    urllib.request(this.productUrl,param,function(err,data,res){
+        if(err){
+            callBack(err);
+        }
+        else{
+            callBack(err,data);
+        }
+    });
+
+};
+
+//获得菜品列表
+BaseService.prototype.getDishes = function(_id,callBack){
+    var param = {
+        method : "GET",
+        dataType : "json",
+        data : {
+            supplierId  :   _id
+        }
+    };
+    //发送餐馆列表请求
+    urllib.request(this.dishesUrl,param,function(err,data,res){
+        if(err){
+            callBack(err);
+        }
+        else{
+            callBack(err,data);
+        }
+    });
+
+};
+
+//获得附近餐馆
+BaseService.prototype.getResList = function(latitude,longitude,callBack){
+    var param = {
+        method : "GET",
+        dataType : "json",
+        data : {
+            latitude  :   latitude,
+            longitude : longitude
+        }
+    };
+
+    //发送餐馆列表请求
+    urllib.request(this.resListUrl,param,function(err,data,res){
+        if(err){
+            callBack(err);
+        }
+        else{
+            callBack(err,data);
+        }
+    });
 };
 
 //订餐
@@ -30,7 +100,6 @@ BaseService.prototype.order = function (msg,callBack) {
     };
     var articles = [];
     var resMsg = {};
-
     //发送餐馆列表请求
     urllib.request(url,data,function(err,data,res){
         if(err){

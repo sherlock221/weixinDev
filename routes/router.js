@@ -14,6 +14,7 @@ var eventMsgRouter = require("./eventMsgRouter");
 var menuRouter    = require("./memuRouter");
 var Result = require("./result/result");
 var AdminRouter = require("./adminRouter");
+var FunwebRouter = require("./funwebRouter");
 
 //微信配置
 weixin.token = "sherlock221b";
@@ -67,9 +68,8 @@ module.exports.use = function(app){
         weixin.loop(req, res);
     });
 
-    //获得餐馆列表页面
-   // app.get("/restarurat",)
-
+    //飞饭业务
+    new FunwebRouter(app,weixin,apiWx);
     //后台部分
     new  AdminRouter(app,weixin,apiWx);
 };

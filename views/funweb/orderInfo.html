@@ -1,0 +1,47 @@
+<head>
+<meta charset="utf-8">
+<meta content="width=device-width,user-scalable=no" name="viewport">
+<meta name="viewport"
+	content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<title>确认订单</title>
+<link rel="stylesheet" href="new_file.css">
+
+<script src="js/zepto.js"></script>
+<script src="js/zepto.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="js/orderInfo.js"></script>
+
+</head>
+<body>
+	<div id='header' class="title_bar">
+		<img src="img/back.png" id="back">
+		<p class="title">确定订单</p>
+	</div>
+
+
+
+	<div data-role="page" id="pagefour">
+	
+		<div class="listbottom"></div>
+	
+		<form>
+			<input type="text" id="address" style="color:gray"  data-role="none" class="input" placeholder="送餐地址">
+			<input type="text" id="phone" style="color:gray" data-role="none" class="input" placeholder="联系电话">
+			<!--  <input type="text" id="shortTelephone" style="color:gray"  data-role="none" class="input" placeholder="备用电话（选填）">-->
+			<p class="reachtime">
+		 		<span class="">送达时间：</span>
+				<select id="reachTime">
+					<option value="0">立即送出</option>
+					
+				</select>
+			</p>
+			<input type="text" id="note" style="color:gray"  data-role="none" class="input" placeholder="添加备注（选填）">
+			<div class="btn_bar">
+				<a href="#" class="btn_100" id="submit">确认下单</a>
+			</div>
+
+		</form>
+	</div>
+
+</body>
+</html>

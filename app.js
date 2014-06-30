@@ -68,6 +68,11 @@ app.use(function(err, req, res, next){
 
 
 
+//获得服务器ip地址
+var address =require("./util/address");
+console.log(address.getLocalIP("","IPv4"));
+
+
 //常量
 var showErrOnConsole = true;
 

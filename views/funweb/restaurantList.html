@@ -1,0 +1,43 @@
+<html>
+<head>
+<title>餐厅列表</title>
+<%- include /common/meta.html %>
+<%- include /common/header.html %>
+<script type="text/javascript" src="/funweb/js/restaurantList.js"></script>
+</head>
+
+<body>
+	<div id="header" class="title_bar">
+	    <a class="title" style="margin-right:0px;"><i class="tran tran-top"></i></a>
+	</div>
+	<div id="pagethree">
+   		<div style="top: 0; height: 50px; width: 100%; text-align: center; line-height: 50px; background: #F8F8F8;"></div>
+	</div>
+	<div id="pageone">
+		<ul id='rest_list'>
+			
+		</ul>
+	</div>
+	<div id="pagetwo" style="display: none">
+		<ul id="order_list">
+			
+		</ul>
+	</div>
+
+	<!--<div  class="action_bar" >-->
+    	<!--<div id="toOrder" class="active">-->
+			<!--<img src="/funweb/img/icon_toorder_active.png" id="toorder_icon_active">-->
+			<!--<img src="/funweb/img/icon_toorder.png" id="toorder_icon" style="display:none;" >-->
+			<!--<p>我要订餐</p>-->
+		<!--</div>-->
+    	<!--<div id="myOrder">-->
+			<!--<img src="/funweb/img/icon_myorder.png" id="myorder_icon">-->
+			<!--<img src="/funweb/img/icon_myorder_active.png" id="myorder_icon_active" style="display:none;">-->
+			<!--<p>我的订单</p>-->
+		<!--</div>-->
+    <!--</div>-->
+
+
+        <%- include /common/footer.html %>
+</body>
+</html>
