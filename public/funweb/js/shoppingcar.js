@@ -8,14 +8,13 @@ Zepto(function($) {
 		var f_x = Math.round(floatvar * 100) / 100;
 		return f_x;
 	}
-
-	try {
-		var zz = $('<img/>', {
-			src : 'img/back.png',
-			id : "back"
-		});
-		$('#header').prepend(zz);
-		var data = stringToJson(getCookie("orderMsgs"));
+//		var zz = $('<img/>', {
+//			src : 'img/back.png',
+//			id : "back"
+//		});
+		//$('#header').prepend(zz);
+        var order = lg.get("orderMsgs");
+		var data = stringToJson(order);
 		var sub = 0;
 		var m = 0;
 		for (i = 0; ; i++) {
@@ -29,7 +28,6 @@ Zepto(function($) {
 				text : data.products[i].PName,
 				class : 'dingdan'
 			});
-			
 			
 			
 			var aaa = $('<div />', {
@@ -50,11 +48,11 @@ Zepto(function($) {
 			
 			var dd = $('<img />', {
 				class : 'fuhao jian',
-				src:'img/minus.png'
+				src:'/funweb/img/minus.png'
 			});
 			var ff = $('<img />', {
 				class : 'fuhao jia',
-				src:'img/plus.png'
+				src:'/funweb/img/plus.png'
 			});
 			var gg = $('<a />', {
 				class : 'fuhaowai'
@@ -87,7 +85,6 @@ Zepto(function($) {
 			m = m + data.products[i].buyCount * 1;
 			
 		}
-		
 		var delivery = $('<li>', {
 			class : 'fooditem',
 			id : 'delivery_fee'
@@ -103,9 +100,6 @@ Zepto(function($) {
 		}));
 		$('#submoney').text(sub);
 		$('#ms').text(m);
-	} catch (e) {
-		console.log(e)
-	}
 
 	$('#back').bind('click', function() {
 		
@@ -133,7 +127,7 @@ Zepto(function($) {
 	$('.btn_100').bind('click', function() {
 		var result = true;
 		var total = parseFloat($("#submoney").text());
-		var data = stringToJson(getCookie("orderMsgs"));
+		var data = stringToJson(lg.get("orderMsgs"));
 		var foodList = $(".fooditem");
 		for(var i = 0; i < foodList.length - 1; i++){
 			var food = foodList[i];
@@ -156,7 +150,7 @@ Zepto(function($) {
 			var totalQuantity1 = parseInt($('#ms').text());
 			data.totalQuantity = totalQuantity1;
 			data.totalAmount = totalAmount1;
-			setCookie('orderMsgs', jsonToStr(data), 3);
+			lg.save('orderMsgs', jsonToStr(data));
 	
 		}
 	});
@@ -190,7 +184,6 @@ Zepto(function($) {
 					$('#submoney').text(changeTwoDecimal(sub * 1 - def * 1));
 				}
 			})
-
 });
 
 function checkNum(obj)

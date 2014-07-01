@@ -2,6 +2,44 @@ var Result = require("./result/result");
 var baseService = require("./../services/baseService");
 var FunwebRouter = function(app,weixin,apiWx){
 
+    //测试接口
+    app.get("/test",function(){
+        baseService.order("dd",function(){
+
+        });
+    });
+
+    //下单
+    app.post("/order",function(req,res,next){
+        var orderStr =  req.body.orderStr;
+        baseService.subOrder(orderStr,function(err,data){
+            if(err){
+                next(err);
+            }
+            else{
+                res.json(data);
+            }
+        });
+    });
+
+    //获得订单页面
+    app.get("/orderInfoPage",function(req,res){
+        res.render("funweb/orderInfo");
+    });
+
+    //获得餐馆信息
+    app.get("/supplier",function(req,res,next){
+        var _id = req.query.supplierId;
+        baseService.getSupplier(_id,function(err,data){
+            if(err){
+                next(err);
+            }
+            else{
+                res.json(data);
+            }
+        });
+    });
+
     //获得菜品详细
     app.get("/product",function(req,res,next){
         var pageSize = req.query.pageSize;
@@ -74,6 +112,11 @@ var FunwebRouter = function(app,weixin,apiWx){
              }
 
          });
+    });
+
+    //获得购物车页面
+    app.get("/shoppingcarPage",function(req,res){
+        res.render("funweb/shoppingcar");
     });
 };
 

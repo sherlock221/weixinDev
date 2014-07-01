@@ -1,32 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8">
-<meta content="width=device-width,user-scalable=no" name="viewport">
-<meta name="viewport"
-	content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<%- include /common/meta.html %>
+<%- include /common/header.html %>
 <title>美食车</title>
-<link rel="stylesheet" href="new_file.css">
-
-<script src="js/zepto.js"></script>
-<script src="js/zepto.min.js"></script>
-<script type="text/javascript" src="js/main.js"></script>
-<script type="text/javascript" src="js/shoppingcar.js"></script>
 </head>
 <body>
 	<div id="header" class="title_bar">
 		<p class="title">美食车</p>
 	</div>
 
-
-
 	<div id="pagethree">
 		<div
 			style="top: 0; height: 50px; width: 100%; text-align: center; line-height: 50px; background: #F8F8F8;"></div>
 	</div>
 	<ul class="food_cart">
-		
-		
+
 	</ul>
 	<span
 		style="float: right; line-height: 60px; text-align: right; padding-right: 20px; color: #FF7745;">￥<span
@@ -35,14 +24,12 @@
 		id='ms'></span>个菜
 	</span>
 	<br />
-
-
 	<br />
 	<div class="btn_bar">
-		<a href="orderInfo.html" class="btn_100">去下单</a>
+		<a href="/orderInfoPage" class="btn_100">去下单</a>
 	</div>
-	<div style="display: none;">
-		<script src="http://s9.cnzz.com/stat.php?id=2999942&web_id=2999942" language="JavaScript"></script>
-	</div>
+
+    <script type="text/javascript" src="/funweb/js/shoppingcar.js"></script>
+    <%- include /common/footer.html %>
 </body>
 </html>

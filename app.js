@@ -68,11 +68,10 @@ app.use(function(err, req, res, next){
 });
 
 
-
 //获得服务器ip地址
 //var ip = address.getLocalIP();
 //console.log(ip);
-global.serverAddress = ip;
+global.serverAddress = "http://a86290966a.oicp.net";
 
 //常量
 var showErrOnConsole = true;
@@ -82,7 +81,5 @@ var showErrOnConsole = true;
 //cache.use();
 
 //打开数据库
-
-
 module.exports = app;
 

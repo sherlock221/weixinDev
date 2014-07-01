@@ -1,24 +1,13 @@
 <head>
-<meta charset="utf-8">
-<meta content="width=device-width,user-scalable=no" name="viewport">
-<meta name="viewport"
-	content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<%- include /common/meta.html %>
+<%- include /common/header.html %>
 <title>确认订单</title>
-<link rel="stylesheet" href="new_file.css">
-
-<script src="js/zepto.js"></script>
-<script src="js/zepto.min.js"></script>
-<script type="text/javascript" src="js/main.js"></script>
-<script type="text/javascript" src="js/orderInfo.js"></script>
 
 </head>
 <body>
 	<div id='header' class="title_bar">
-		<img src="img/back.png" id="back">
 		<p class="title">确定订单</p>
 	</div>
-
-
 
 	<div data-role="page" id="pagefour">
 	
@@ -43,5 +32,7 @@
 		</form>
 	</div>
 
+    <%- include /common/footer.html %>
+    <script type="text/javascript" src="/funweb/js/orderInfo.js"></script>
 </body>
 </html>

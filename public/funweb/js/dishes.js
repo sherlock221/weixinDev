@@ -51,7 +51,6 @@ Zepto(function($) {
 		// 统计页面信息，将信息组织成JSON格式
 		// supplierId
 		var foods = $('.food_list');
-
 		var products=[];
 		for(var j = 0; j < foods.length; j++){
 			var amount = $(foods[j]).find('.num').text();
@@ -66,24 +65,21 @@ Zepto(function($) {
 				product["id"] = parseInt(id);
 				product["PName"] = name;  
 				product["buyCount"] = parseInt(amount);
-				
-				products.push(product);  
-				
+				products.push(product);
 			}
 			
 		}
-		var json = stringToJson(cookieStr);
+		var json = {
+            supplier : {}
+        };
 		json.products = products;
-
 		json.supplier.id = parseInt(supplierId);
 		json.supplier.companyName = supplierName;
 		json.supplier.deliveryCharge = parseFloat(deliveryCharge);
 		json.supplier.deliveryLeastValue = parseInt(deliveryLeastValue);
-		
 		json.deviceId = deviceId;
 		json.pguid = window.pguid;
-		setCookie("orderMsgs",jsonToStr(json),3);
-		
+		lg.save("orderMsgs",json);
 
 	});
 	
@@ -115,7 +111,6 @@ Zepto(function($) {
 				}
 				return false;
 			});
-
 });
 
 var product = {

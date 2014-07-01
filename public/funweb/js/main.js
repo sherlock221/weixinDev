@@ -63,47 +63,27 @@ function getServerReq(_id) {
     return $("#"+_id).val();
 }
 
-/**
- * 读取cookie
- * 
- * @param c_name
- *            cookie名
- * @returns
- */
-function getCookie(c_name){
-		// 先查询cookie是否为空，为空就return ""
-	if (document.cookie.length>0){
-		c_start=document.cookie.indexOf(c_name + "=");
-			
-      	// 通过String对象的indexOf()来检查这个cookie是否存在，不存在就为 -1
-		if (c_start!=-1){ 
-		// 最后这个+1其实就是表示"="号啦，这样就获取到了cookie值的开始位置
-			c_start=c_start + c_name.length+1;
-        	// 其实我刚看见indexOf()第二个参数的时候猛然有点晕，后来想起来表示指定的开始索引的位置...这句是为了得到值的结束位置。因为需要考虑是否是最后一项，所以通过";"号是否存在来判断
-			c_end=document.cookie.indexOf(";",c_start);
-			if (c_end==-1) c_end=document.cookie.length;
-				return unescape(document.cookie.substring(c_start,c_end));// 通过substring()得到了值。想了解unescape()得先知道escape()是做什么的，都是很重要的基础，想了解的可以搜索下，在文章结尾处也会进行讲解cookie编码细节
-			} 
-		}
-	return "";
-}
-
 
 /**
- * 设置cookie
- * 
- * @param c_name
- *            cookie名称
- * @param value
- *            cookie值
- * @param expiredays
- *            超时时间
+ * html5 本地存储
+ * @type {{save: save, get: get}}
  */
-function setCookie(c_name, value, expirehours){
-	var exdate=new Date();
-	exdate.setHours(exdate.getHours() + expirehours);
-	document.cookie=c_name+ "=" + escape(value) + ((expirehours==null) ? "" : ";expires="+exdate.toGMTString());
-}
+var  lg = {
+    save : function(key,value){
+        if(value instanceof  Object)
+            value = jsonToStr(value);
+
+        localStorage.setItem(key,value);
+    },
+    get : function(key){
+        return localStorage.getItem(key);
+    },
+    clear : function(){
+        localStorage.clear();
+    }
+
+};
+
 
 /**
  * json对象转字符串形式

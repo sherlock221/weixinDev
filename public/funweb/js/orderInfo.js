@@ -1,18 +1,26 @@
 Zepto(function($) {
 	
-	//读取cookie
-	var orderStr = getCookie("orderMsgs");
+	//读取本地存储
+	var orderStr = lg.get("orderMsgs");
 	var json = stringToJson(orderStr);
+
+    //读取地址
+    var addressInfo = stringToJson(lg.get("addressInfo"));
+    var $phone = $("#phone");
+    var $address = $("#address");
+    if(addressInfo){
+        $phone.val(addressInfo.phone);
+        $address.val(addressInfo.address);
+    }
 	var supplierId = json.supplier.id;
 	$.ajax({
-		type : "post",
+		type : "get",
 		url : getRootPath()
-				+ "/android/cloudOfCampus!loadSupplierById.action",
+				+ "/supplier",
 		datatype : 'json',
 		data: {supplierId: supplierId},
 		success : function(data) {
 			if(data.errCode == null){
-				
 				// 得到当前时间
 				var now = new Date();
 				var hour = now.getHours();
@@ -97,8 +105,8 @@ Zepto(function($) {
 	});
 	$('#submit').click(function() {
 		//信息校验
-		var address = $("#address").val();
-		var phone = $("#phone").val();
+		var address =$address.val();
+		var phone = $phone.val();
 		if(address == ""){
 			alert("请填写地址！");
 		}else if(phone == ""){
@@ -107,7 +115,6 @@ Zepto(function($) {
 		}else if(!checkPhone(phone)){
 			alert("手机号格式不正确!");
 		}else{
-			//
 			var shortTelephone = $("#shortTelephone").val();
 			var reachTime = $("#reachTime option:selected").text();
 			if(reachTime == "立即送出"){
@@ -116,8 +123,9 @@ Zepto(function($) {
 				reachTime ="["+reachTime+" 送达]";
 			}
 			var note = reachTime +$("#note").val();
-			//读取cookie
-			var orderStr = getCookie("orderMsgs");
+			//读取本地存储
+			var orderStr = lg.get("orderMsgs");
+
 			var json = stringToJson(orderStr);
 			json.address = address;
 			json.phone = phone;
@@ -131,21 +139,25 @@ Zepto(function($) {
 			json.note = note;
 			json.shortTelephone = shortTelephone;
 			orderStr = jsonToStr(json);
-			//将cookie发送到
-			//"android/order!submitOrder.action"
-		
+
+            //提请请求
 			$.ajax({
 				type : "post",
 				url : getRootPath()
-						+ "/android/order!submitOrder.action",
+						+ "/order",
 				datatype : 'json',
 				data: {orderStr: orderStr},
 				success : function(data) {
 					if(data.errorCode == 'success'){
+
+                        //成功存储最后一次地址
+                        var  addressInfo = {
+                            address : address,
+                            phone :  phone
+                        };
+                        lg.save("addressInfo",addressInfo);
 						alert('下单成功');
-						
-						window.location.href=getRootPath()+"/cloudofcampus/restaurantList.html?flag=orderInfo";
-						
+
 					}else{
 						alert(data.errorCode);
 					}

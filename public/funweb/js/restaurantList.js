@@ -239,6 +239,8 @@ var restaurant = {
 						// 服务器传回的data包含一个supplier的List
 						var supplierList = data.suppliers;
 
+                        $("#titleBar").text(data.areaName);
+
 						// 把休息中的餐厅单独存放，因为休息中的餐厅需要排在最后面
 						var restSuppliers = new Array();// 存放休息中的餐厅
 						var ortherSuppliers = new Array();// 存放除了休息状态以外的餐厅
@@ -310,7 +312,7 @@ var restaurant = {
 							if (supplier.logoImg) {
 								logo = supplier.logoImg;
 							} else {
-								logo = 'img/shangjia.png';
+								logo = '/funweb/img/shangjia.png';
 							}
 
 							var cc = $('<img/>', {
@@ -324,7 +326,7 @@ var restaurant = {
 								style : 'display : none'
 							});
 							var dd = $('<div/>', {
-								class : 'res_container',
+								class : 'res_container'
 							});
 							var ee = $('<span/>', {
 								class : 'res_title',
@@ -389,15 +391,14 @@ var restaurant = {
 							// 运费
 							var deliveryCharge = supplier.deliveryCharge;
 							var aa = $('<li/>', {
-								class : 'res_item',
-
+								class : 'res_item'
 							});
 							var bb = $('<a/>', {
-								class : 'resitem_a',
-								href : getRootPath() + "/cloudofcampus/dishes.html?supplierId=" + supplierId
-										+ "&supplierName=" + encodeURI(supplierName) + "&deliveryLeastValue="
-										+ deliveryLeastValue + "&deviceId=" + deviceId + "&deliveryCharge="
-										+ deliveryCharge + "&pguid=" + pguid + "&isRest=1"
+								class : 'resitem_a'
+//								href : getRootPath() + "/cloudofcampus/dishes.html?supplierId=" + supplierId
+//										+ "&supplierName=" + encodeURI(supplierName) + "&deliveryLeastValue="
+//										+ deliveryLeastValue + "&deviceId=" + deviceId + "&deliveryCharge="
+//										+ deliveryCharge + "&pguid=" + pguid + "&isRest=1"
 							});
 
 							var logo;
