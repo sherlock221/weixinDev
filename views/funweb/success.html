@@ -1,0 +1,37 @@
+<head>
+<%- include /common/meta.html %>
+<title>订单提交成功</title>
+<style type="text/css">
+
+    .order-success{
+        border:  1px solid #DDDDDD;
+        padding: 20px 15px;
+    }
+    .order-success >div{
+        margin-bottom: 10px;
+    }
+</style>
+</head>
+<body>
+
+    <div id="" class="order-success">
+        <div>
+            订单提交成功，请耐心等待
+        </div>
+        <div class="reset">
+
+        </div>
+        <div class="phone">
+
+        </div>
+    </div>
+
+</body>
+<script type="text/javascript">
+    var  reset  = lg.get("reset");
+    var orderObj = $(".order-success");
+    orderObj.find(".reset").html( "餐厅："+reset.address);
+    orderObj.find(".phone").html( "电话："+reset.phone);
+</script>
+</html>
+
