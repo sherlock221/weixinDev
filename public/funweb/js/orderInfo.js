@@ -20,7 +20,19 @@ Zepto(function($) {
 		datatype : 'json',
 		data: {supplierId: supplierId},
 		success : function(data) {
+
+
+
 			if(data.errCode == null){
+
+                //save address
+                var restart = {
+                    address :  data.supplier.companyAddress,
+                    phone :  data.supplier.contactMobile + "  " + data.supplier.contactPhone
+                };
+
+                lg.save("reset",restart);
+
 				// 得到当前时间
 				var now = new Date();
 				var hour = now.getHours();
@@ -155,7 +167,13 @@ Zepto(function($) {
                             address : address,
                             phone :  phone
                         };
-                        lg.save("addressInfo",addressInfo);
+                        lg.save("addressInfo",addressInfo)
+
+
+
+                        //餐馆地址
+
+                        location.href = "/success";
 						alert('下单成功');
 
 					}else{

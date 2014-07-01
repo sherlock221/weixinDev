@@ -132,13 +132,29 @@ BaseService.prototype.getResList = function(latitude,longitude,callBack){
 //订餐
 BaseService.prototype.order = function (msg,callBack) {
     var _this = this;
+    var articles = [];
+    var resMsg = {};
+
     console.log("我要订餐");
     var url =  _this.resListUrl;
     console.log(msg);
-   // var latitude = global.users.get(msg.fromUserName).location.latitude;
-    //var longitude = global.users.get(msg.fromUserName).location.longitude;
-    var latitude = "34.2523800";
-    var longitude = "108.9897520";
+    var user = global.users.get(msg.fromUserName);
+
+
+
+    //no gps
+    if(!user || !user.location){
+        resMsg = new Message(msg,"text","亲，您的gps没有打开哦.您可以尝试以下操作：\n1、进入手机设置，打开gps开关，点击当前页面右上角的“详细资料”按钮，打开“提供位置信息”的开关\n2、点击左侧底部小键盘按钮，发送您的位置信息。");
+        callBack("",resMsg);
+        return;
+    }
+    
+    var location = user.location;
+    var latitude = location.latitude;
+    var longitude =location.longitude;
+
+    //var latitude = "34.2523800";
+    //var longitude = "108.9897520";
 
 
     var data = {
@@ -149,8 +165,7 @@ BaseService.prototype.order = function (msg,callBack) {
             longitude : longitude
         }
     };
-    var articles = [];
-    var resMsg = {};
+
     //发送餐馆列表请求
     urllib.request(url,data,function(err,data,res){
         if(err){
@@ -162,7 +177,7 @@ BaseService.prototype.order = function (msg,callBack) {
             var  supplisrs = data.suppliers;
 
             if(supplisrs ==  null){
-                resMsg = new Message(msg,"text","您附近没有发现热点区域");
+                resMsg = new Message(msg,"text","对不起，您附近没有外卖餐厅！飞饭仔正在努力覆盖中");
             }
             else{
                 var total = supplisrs.length;

@@ -22,6 +22,11 @@ var FunwebRouter = function(app,weixin,apiWx){
         });
     });
 
+    //success
+    app.get("/success",function(req,res){
+        res.render("funweb/success");
+    });
+
     //获得订单页面
     app.get("/orderInfoPage",function(req,res){
         res.render("funweb/orderInfo");
