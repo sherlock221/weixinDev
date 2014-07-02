@@ -123,6 +123,13 @@ var FunwebRouter = function(app,weixin,apiWx){
     app.get("/shoppingcarPage",function(req,res){
         res.render("funweb/shoppingcar");
     });
+
+    //order
+    app.get("/orderPage",function(req,res){
+        res.render("funweb/myorder");
+    });
+
+
 };
 
 module.exports = FunwebRouter;

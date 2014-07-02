@@ -168,13 +168,9 @@ Zepto(function($) {
                             phone :  phone
                         };
                         lg.save("addressInfo",addressInfo)
-
-
-
                         //餐馆地址
-
                         location.href = "/success";
-						alert('下单成功');
+						//alert('下单成功');
 
 					}else{
 						alert(data.errorCode);

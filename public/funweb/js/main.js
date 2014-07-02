@@ -39,9 +39,12 @@ function createCookieValue(){
 	return jsonToStr(order);
 }
 
-function getRootPath() {
-	return window.location.protocol + '//' + window.location.host;
-    //return  "http://www.flymeal.cn";
+function getRootPath(type) {
+    if(type== "fly")
+        return  "http://www.flymeal.cn";
+    else
+    	return window.location.protocol + '//' + window.location.host;
+
 }
 
 /**
@@ -62,6 +65,52 @@ function getRequest() {
 function getServerReq(_id) {
     return $("#"+_id).val();
 }
+
+
+var AjaxUtil = {
+
+    /**
+     * kua yu
+     * @param url
+     * @param data
+     * @param callBack
+     */
+    jsonp  : function(url,data,callBack){
+
+        var message = "?";
+        var i=0;
+        //data
+        for(var obj in data){
+            var key = obj;
+            var value = data[obj];
+           if(i != 0)
+                message += "&"+key +"="+value;
+            else
+               message += key +"="+value;
+            i++;
+        }
+
+        message = "?";
+        console.log(message);
+
+
+
+        $.ajax({
+            url:url+message,
+            dataType:"jsonp",
+            jsonp:"jsonpcallback",
+            success:function(data){
+                alert("wanc");
+                callBack(data);
+            },
+            error : function(){
+                alert("kua yu error");
+            }
+        });
+
+    }
+
+};
 
 
 /**

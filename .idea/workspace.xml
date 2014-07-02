@@ -2,6 +2,136 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="78624268-b262-4482-a96d-f2ecd3c54517" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/weixin-api/.npmignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/weixin-api/node_modules/formstream/.npmignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/weixin-api/node_modules/formstream/node_modules/buffer-concat/.npmignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/weixin-api/node_modules/formstream/node_modules/dethroy/.npmignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/weixin-api/node_modules/formstream/node_modules/pause-stream/.npmignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/weixin-api/node_modules/sha1/.npmignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/weixin-api/node_modules/xml2js/.npmignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/weixin-api/.travis.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/weixin-api/node_modules/bufferhelper/.travis.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/weixin-api/node_modules/formstream/node_modules/pause-stream/node_modules/through/.travis.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/weixin-api/node_modules/sha1/.travis.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/weixin-api/node_modules/xml2js/.travis.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/weixin-api/node_modules/formstream/AUTHORS" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/weixin-api/node_modules/xml2js/node_modules/sax/AUTHORS" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/weixin-api/node_modules/formstream/History.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/weixin-api/node_modules/formstream/node_modules/pause-stream/node_modules/through/LICENSE.APACHE2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/weixin-api/node_modules/formstream/node_modules/pause-stream/node_modules/through/LICENSE.MIT" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/weixin-api/node_modules/sha1/node_modules/charenc/LICENSE.mkd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/weixin-api/node_modules/sha1/node_modules/crypt/LICENSE.mkd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/weixin-api/node_modules/formstream/LICENSE.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/weixin-api/node_modules/formstream/node_modules/buffer-concat/LICENSE.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/weixin-api/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/weixin-api/node_modules/formstream/node_modules/mime/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/weixin-api/node_modules/formstream/node_modules/pause-stream/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/weixin-api/node_modules/sha1/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/weixin-api/node_modules/xml2js/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/weixin-api/node_modules/xml2js/node_modules/sax/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/weixin-api/node_modules/bufferhelper/MIT_License" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/weixin-api/node_modules/formstream/node_modules/dethroy/Makefile" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/weixin-api/node_modules/sha1/node_modules/charenc/README.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/weixin-api/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/weixin-api/node_modules/bufferhelper/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/weixin-api/node_modules/formstream/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/weixin-api/node_modules/formstream/node_modules/buffer-concat/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/weixin-api/node_modules/formstream/node_modules/dethroy/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/weixin-api/node_modules/formstream/node_modules/mime/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/weixin-api/node_modules/sha1/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/weixin-api/node_modules/xml2js/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/weixin-api/node_modules/xml2js/node_modules/sax/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/weixin-api/node_modules/sha1/node_modules/crypt/README.mkd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/weixin-api/tests/all.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/weixin-api/node_modules/formstream/node_modules/pause-stream/node_modules/through/test/auto-destroy.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/weixin-api/node_modules/xml2js/node_modules/sax/examples/big-not-pretty.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/weixin-api/node_modules/xml2js/node_modules/sax/test/buffer-overrun.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/weixin-api/node_modules/bufferhelper/lib/bufferhelper.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/weixin-api/node_modules/formstream/node_modules/pause-stream/node_modules/through/test/buffering.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/weixin-api/node_modules/xml2js/node_modules/sax/test/case.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/weixin-api/node_modules/xml2js/node_modules/sax/test/cdata-chunked.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/weixin-api/node_modules/xml2js/node_modules/sax/test/cdata-end-split.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/weixin-api/node_modules/xml2js/node_modules/sax/test/cdata-fake-end.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/weixin-api/node_modules/xml2js/node_modules/sax/test/cdata-multiple.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/weixin-api/node_modules/xml2js/node_modules/sax/test/cdata.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/weixin-api/node_modules/sha1/node_modules/charenc/charenc.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/weixin-api/node_modules/sha1/node_modules/crypt/crypt.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/weixin-api/node_modules/formstream/node_modules/pause-stream/node_modules/through/test/end.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/weixin-api/examples/example.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/weixin-api/node_modules/xml2js/node_modules/sax/examples/example.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/weixin-api/node_modules/formstream/lib/formstream.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/weixin-api/node_modules/xml2js/node_modules/sax/examples/get-products.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/weixin-api/node_modules/xml2js/node_modules/sax/examples/hello-world.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/weixin-api/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/weixin-api/node_modules/bufferhelper/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/weixin-api/node_modules/formstream/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/weixin-api/node_modules/formstream/node_modules/buffer-concat/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/weixin-api/node_modules/formstream/node_modules/dethroy/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/weixin-api/node_modules/formstream/node_modules/pause-stream/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/weixin-api/node_modules/formstream/node_modules/pause-stream/node_modules/through/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/weixin-api/node_modules/formstream/node_modules/pause-stream/node_modules/through/test/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/weixin-api/node_modules/formstream/node_modules/pause-stream/test/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/weixin-api/node_modules/xml2js/node_modules/sax/test/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/weixin-api/node_modules/xml2js/node_modules/sax/test/issue-23.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/weixin-api/node_modules/xml2js/node_modules/sax/test/issue-30.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/weixin-api/node_modules/xml2js/node_modules/sax/test/issue-35.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/weixin-api/node_modules/xml2js/node_modules/sax/test/issue-47.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/weixin-api/node_modules/xml2js/node_modules/sax/test/issue-49.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/weixin-api/node_modules/formstream/node_modules/mime/mime.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/weixin-api/node_modules/formstream/node_modules/mime/types/mime.types" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/weixin-api/node_modules/formstream/node_modules/mime/types/node.types" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/weixin-api/node_modules/xml2js/node_modules/sax/examples/not-pretty.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/weixin-api/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/weixin-api/node_modules/bufferhelper/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/weixin-api/node_modules/formstream/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/weixin-api/node_modules/formstream/node_modules/buffer-concat/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/weixin-api/node_modules/formstream/node_modules/dethroy/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/weixin-api/node_modules/formstream/node_modules/mime/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/weixin-api/node_modules/formstream/node_modules/pause-stream/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/weixin-api/node_modules/formstream/node_modules/pause-stream/node_modules/through/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/weixin-api/node_modules/sha1/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/weixin-api/node_modules/sha1/node_modules/charenc/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/weixin-api/node_modules/sha1/node_modules/crypt/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/weixin-api/node_modules/xml2js/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/weixin-api/node_modules/xml2js/node_modules/sax/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/weixin-api/node_modules/xml2js/node_modules/sax/test/parser-position.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/weixin-api/node_modules/formstream/node_modules/pause-stream/test/pause-end.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/weixin-api/node_modules/xml2js/node_modules/sax/examples/pretty-print.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/weixin-api/node_modules/formstream/node_modules/pause-stream/readme.markdown" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/weixin-api/node_modules/formstream/node_modules/pause-stream/node_modules/through/readme.markdown" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/weixin-api/node_modules/xml2js/node_modules/sax/lib/sax.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/weixin-api/node_modules/xml2js/node_modules/sax/test/script.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/weixin-api/node_modules/xml2js/node_modules/sax/test/self-closing-child-strict.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/weixin-api/node_modules/xml2js/node_modules/sax/test/self-closing-child.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/weixin-api/node_modules/xml2js/node_modules/sax/test/self-closing-tag.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/weixin-api/node_modules/sha1/sha1.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/weixin-api/node_modules/xml2js/node_modules/sax/examples/shopping.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/weixin-api/node_modules/xml2js/node_modules/sax/test/stray-ending.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/weixin-api/node_modules/xml2js/node_modules/sax/examples/strict.dtd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/weixin-api/node_modules/xml2js/node_modules/sax/examples/switch-bench.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/weixin-api/node_modules/xml2js/node_modules/sax/examples/test.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/weixin-api/node_modules/bufferhelper/test/test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/weixin-api/node_modules/formstream/node_modules/mime/test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/weixin-api/node_modules/sha1/test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/weixin-api/node_modules/xml2js/node_modules/sax/examples/test.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/weixin-api/node_modules/xml2js/node_modules/sax/test/trailing-non-whitespace.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/weixin-api/node_modules/xml2js/node_modules/sax/test/unquoted.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/weixin-api/node_modules/xml2js/lib/xml2js.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/weixin-api/node_modules/xml2js/node_modules/sax/test/xmlns-issue-41.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/weixin-api/node_modules/xml2js/node_modules/sax/test/xmlns-rebinding.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/weixin-api/node_modules/xml2js/node_modules/sax/test/xmlns-strict.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/weixin-api/node_modules/xml2js/node_modules/sax/test/xmlns-unbound.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/weixin-api/node_modules/xml2js/node_modules/sax/test/xmlns-xml-default-ns.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/weixin-api/node_modules/xml2js/node_modules/sax/test/xmlns-xml-default-prefix-attribute.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/weixin-api/node_modules/xml2js/node_modules/sax/test/xmlns-xml-default-prefix.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/weixin-api/node_modules/xml2js/node_modules/sax/test/xmlns-xml-default-redefine.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/funwebRouter.js" afterPath="$PROJECT_DIR$/routes/funwebRouter.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/funweb/js/main.js" afterPath="$PROJECT_DIR$/public/funweb/js/main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/funweb/myorder.html" afterPath="$PROJECT_DIR$/views/funweb/myorder.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/funweb/js/myorder.js" afterPath="$PROJECT_DIR$/public/funweb/js/myorder.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/funweb/js/orderInfo.js" afterPath="$PROJECT_DIR$/public/funweb/js/orderInfo.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/router.js" afterPath="$PROJECT_DIR$/routes/router.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/funweb/success.html" afterPath="$PROJECT_DIR$/views/funweb/success.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="weixinDev.iws" />
@@ -25,19 +155,30 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="eventMsgRouter.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/routes/eventMsgRouter.js">
+      <file leaf-file-name="myorder.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/funweb/myorder.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="799">
+            <state line="1" column="0" selection-start="7" selection-end="7" vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="374">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="orderInfo.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/funweb/orderInfo.html">
+      <file leaf-file-name="myorder.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/funweb/js/myorder.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="748">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1785">
+              <folding>
+                <marker date="1404295023000" expanded="true" signature="1189:1206" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="funwebRouter.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/routes/funwebRouter.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="0" selection-start="231" selection-end="231" vertical-scroll-proportion="0.0" vertical-offset="119" max-vertical-offset="2380">
               <folding />
             </state>
           </provider>
@@ -46,25 +187,25 @@
       <file leaf-file-name="orderInfo.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/funweb/js/orderInfo.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="0" selection-start="32" selection-end="32" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="3587">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3519">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="funwebRouter.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/routes/funwebRouter.js">
+      <file leaf-file-name="shoppingcar.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/funweb/js/shoppingcar.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="0" selection-start="188" selection-end="188" vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="2261">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3417">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="baseService.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/services/baseService.js">
+      <file leaf-file-name="dishes.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/funweb/js/dishes.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4012">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3961">
               <folding />
             </state>
           </provider>
@@ -116,25 +257,25 @@
         <option value="$PROJECT_DIR$/views/funweb/common/header.html" />
         <option value="$PROJECT_DIR$/public/funweb/new_file.css" />
         <option value="$PROJECT_DIR$/util/address.js" />
-        <option value="$PROJECT_DIR$/routes/router.js" />
         <option value="$PROJECT_DIR$/node_modules/weixin-api/index.js" />
         <option value="$PROJECT_DIR$/views/funweb/orderInfo.html" />
         <option value="$PROJECT_DIR$/public/funweb/js/dishes.js" />
-        <option value="$PROJECT_DIR$/public/funweb/js/main.js" />
         <option value="$PROJECT_DIR$/public/funweb/js/shoppingcar.js" />
         <option value="$PROJECT_DIR$/views/funweb/shoppingcar.html" />
         <option value="$PROJECT_DIR$/views/funweb/restaurantList.html" />
         <option value="$PROJECT_DIR$/views/funweb/dishes.html" />
         <option value="$PROJECT_DIR$/views/restaurantList.html" />
-        <option value="$PROJECT_DIR$/public/funweb/js/restaurantList.js" />
-        <option value="$PROJECT_DIR$/public/funweb/js/myorder.js" />
-        <option value="$PROJECT_DIR$/views/funweb/myorder.html" />
         <option value="$PROJECT_DIR$/www" />
         <option value="$PROJECT_DIR$/app.js" />
-        <option value="$PROJECT_DIR$/routes/funwebRouter.js" />
-        <option value="$PROJECT_DIR$/public/funweb/js/orderInfo.js" />
-        <option value="$PROJECT_DIR$/views/funweb/success.html" />
         <option value="$PROJECT_DIR$/services/baseService.js" />
+        <option value="$PROJECT_DIR$/views/funweb/success.html" />
+        <option value="$PROJECT_DIR$/public/funweb/js/main.js" />
+        <option value="$PROJECT_DIR$/routes/funwebRouter.js" />
+        <option value="$PROJECT_DIR$/views/funweb/myorder.html" />
+        <option value="$PROJECT_DIR$/routes/router.js" />
+        <option value="$PROJECT_DIR$/public/funweb/js/restaurantList.js" />
+        <option value="$PROJECT_DIR$/public/funweb/js/orderInfo.js" />
+        <option value="$PROJECT_DIR$/public/funweb/js/myorder.js" />
       </list>
     </option>
   </component>
@@ -254,10 +395,6 @@
               <option name="myItemId" value="views" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="funweb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -273,25 +410,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="weixinDev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="weixinDev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="weixinDev" />
+              <option name="myItemId" value="node_modules" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="routes" />
+              <option name="myItemId" value="weixin-api" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -324,11 +447,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="Z:\work\weixinDev\public\funweb" />
+      <recent name="Z:\work\weixinDev\public\funweb\js" />
       <recent name="Z:\work\weixinDev\views\funweb" />
       <recent name="$PROJECT_DIR$/views/funweb" />
       <recent name="$PROJECT_DIR$/views" />
-      <recent name="$PROJECT_DIR$/public/funweb/img" />
-      <recent name="$PROJECT_DIR$/routes" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\work\weixinDev\views\admin\home" />
@@ -388,8 +511,23 @@
     </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
-  <component name="SvnConfiguration" myUseAcceleration="nothing" SSL_PROTOCOLS="sslv3">
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="sslv3">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <option name="IGNORE_EXTERNALS" value="false" />
     <configuration useDefault="false">$USER_HOME$/.subversion</configuration>
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -468,16 +606,16 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295082" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2477396" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2477396" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4068396" sideWeight="0.4996986" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2979798" sideWeight="0.50030136" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4684271" sideWeight="0.4996986" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29738563" sideWeight="0.50030136" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4694989" sideWeight="0.4996986" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32899022" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32897604" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Grunt" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -544,21 +682,18 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/services/baseService.js">
+    <entry file="file://$PROJECT_DIR$/public/funweb/js/shoppingcar.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="100">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3417">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/weixin-api/lib/session.js">
+    <entry file="file://$PROJECT_DIR$/public/funweb/js/dishes.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/weixin-api/lib/menu.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3961">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/weixin-api/lib/common.js">
@@ -666,11 +801,6 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/router.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/funweb/img/list-desc.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -686,32 +816,12 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/adminRouter.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/weixin-api/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../node_modules/express/lib/application.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/funweb/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/funweb/js/shoppingcar.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/funweb/js/dishes.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
       </provider>
@@ -726,17 +836,7 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/funweb/js/restaurantList.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/funweb/dishes.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/funweb/js/myorder.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
       </provider>
@@ -746,28 +846,14 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/funweb/myorder.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/www">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/locationRouter.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/memuRouter.js">
@@ -782,6 +868,58 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/eventMsgRouter.js">
       <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/funweb/orderInfo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/services/baseService.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/funweb/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/funweb/success.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/adminRouter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/funweb/js/restaurantList.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/router.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/funweb/myorder.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="0" selection-start="7" selection-end="7" vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="374">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/funweb/js/dishes.js">
+      <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <folding />
         </state>
@@ -789,29 +927,31 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/funweb/js/orderInfo.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="32" selection-end="32" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="3587">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/funweb/js/shoppingcar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/funwebRouter.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="0" selection-start="188" selection-end="188" vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="2261">
+        <state line="7" column="0" selection-start="231" selection-end="231" vertical-scroll-proportion="0.0" vertical-offset="119" max-vertical-offset="2380">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/services/baseService.js">
+    <entry file="file://$PROJECT_DIR$/public/funweb/js/myorder.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/funweb/orderInfo.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <folding />
+          <folding>
+            <marker date="1404295023000" expanded="true" signature="1189:1206" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
