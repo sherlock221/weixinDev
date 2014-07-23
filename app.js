@@ -63,17 +63,18 @@ app.use(function(err, req, res, next){
 
     if(!err.code)
         err.code = Result.DB_ERROR;
-
     res.json(err);
 });
+
 
 
 //获得服务器ip地址
 //var ip = address.getLocalIP();
 //console.log(ip);
 global.serverAddress = "http://a86290966a.oicp.net";
+//global.serverAddress = "http://1.83.10.229";
 
-//常量
+//常量a86290966a.oicp.net
 var showErrOnConsole = true;
 
 
