@@ -14,7 +14,7 @@ Zepto(function($) {
 //		});
 		//$('#header').prepend(zz);
         var order = lg.get("orderMsgs");
-		var data = stringToJson(order);
+		var data = order;
 		var sub = 0;
 		var m = 0;
 		for (i = 0; ; i++) {
@@ -93,13 +93,18 @@ Zepto(function($) {
 			class : "item_title",
 			text : '配送费'
 		}));
-		sub = parseFloat(sub)+ parseFloat(data.supplier.deliveryCharge);
+		sub = (parseFloat(sub)+ parseFloat(data.supplier.deliveryCharge)).toFixed(2);
 		delivery.append($('<span>', {
 			class : "foodprice",
 			text : data.supplier.deliveryCharge+'元'
 		}));
 		$('#submoney').text(sub);
 		$('#ms').text(m);
+
+        //更新总金额
+        order.totalPrice = (sub - 0);
+        lg.save("orderMsgs",order);
+
 
 	$('#back').bind('click', function() {
 		
@@ -127,7 +132,7 @@ Zepto(function($) {
 	$('.btn_100').bind('click', function() {
 		var result = true;
 		var total = parseFloat($("#submoney").text());
-		var data = stringToJson(lg.get("orderMsgs"));
+		var data = JSON.stringify(lg.get("orderMsgs"));
 		var foodList = $(".fooditem");
 		for(var i = 0; i < foodList.length - 1; i++){
 			var food = foodList[i];
@@ -150,7 +155,7 @@ Zepto(function($) {
 			var totalQuantity1 = parseInt($('#ms').text());
 			data.totalQuantity = totalQuantity1;
 			data.totalAmount = totalAmount1;
-			lg.save('orderMsgs', jsonToStr(data));
+			lg.save('orderMsgs', JSON.parse(data));
 	
 		}
 	});
@@ -168,6 +173,7 @@ Zepto(function($) {
 						'.danjia').text().replace(/[^0-9\.]/ig, ""))
 				var sub = $('#submoney').text();
 				$('#submoney').text(changeTwoDecimal(sub * 1 + def * 1));
+
 
 			});
 	$('.jian').bind('click',function() {

@@ -13,7 +13,7 @@ $(function() {
 	$("#city").on('click', ".city_item", function() {
 		var cityCode = $(this).attr('cityCode');
 		$('#select-title').text($(this).find('a').text());
-		$('#select-title').append('<i class="tran tran-top">');
+		$('#select-title').append('<i class="tran tr这也是他 无法成为主角an-top">');
 		loadZone(cityCode, $(this).find('a').text());
 	});
 

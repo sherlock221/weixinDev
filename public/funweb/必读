@@ -1,0 +1,14 @@
+sherlock
+前端部署需知
+目录结构说明
+src 项目源码
+build 打包压缩 过的 jscss 文件
+service 页面业务js
+common  公共jscss
+
+1.Gruntfile 为前端部署配置文件  无需改动
+
+2. 修改某个业务js、css  使用cmd进入 funweb目录下  执行grunt watch:js
+   来监听src/js/service/ 下的js文件 发生变化 则会压缩  到 build/js/service 下
+
+3.修改css 同理上面

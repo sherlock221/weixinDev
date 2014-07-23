@@ -2,9 +2,45 @@
 	margin: 0px;
 	padding: 0px;
 	font-size: 16px;
-	font-family: "Microsoft YaHei", 微软雅黑, "MicrosoftJhengHei", 华文细黑, STHeiti,
-		MingLiu;
+	font-family: "Microsoft YaHei", '微软雅黑', "MicrosoftJhengHei", '华文细黑';
 }
+
+
+.inline-block{
+    display: inline-block;  
+}
+.loading{
+    background-image: url("../../img/loading.gif");
+    width: 32px;
+    height: 32px;
+    background-size: 32px 32px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -16px;
+    margin-left: -16px;
+    display: none;
+
+}
+
+/* HiDPI support */
+@media (-o-min-device-pixel-ratio: 5/4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
+    .loading
+    {
+        background-image: url("../../img/loading.gif");
+        width: 16px;
+        height: 16px;
+        -webkit-background-size: 16px 16px;
+        background-size: 16px 16px;
+    }
+}
+
+/** fast click **/
+a, input, button {
+    -ms-touch-action: none !important;
+}
+/** fast click **/
+
 
 .clear {
 	clear: both;
@@ -50,6 +86,9 @@ body {
 
 #pageone,#pagetwo {
 	padding-bottom: 50px;
+    position: relative;
+    overflow: hidden;
+    min-height: 300px;
 }
 
 #toOrder,#myOrder {
@@ -86,7 +125,7 @@ body {
 
 .title {
 	text-align: center;
-	margin-right: 40px;
+
 	display: block;
 	-webkit-tap-highlight-color: rgba(0,0,0,0);
 }
@@ -298,7 +337,7 @@ li.fooditem {
 }
 
 .closed .icon {
-	background:
+
 }
 
 .star {
