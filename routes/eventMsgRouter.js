@@ -10,28 +10,62 @@ exports.handler = function(wx,msg){
         var user = new User(msg.fromUserName,msg.latitude,msg.longitude,msg.precision);
         global.users.save(user.id,user);
         console.log(user);
-        baseService.location();
+        baseService.location(msg,function(err,content){
+            wx.sendMsg(content);
+        });
+    }
+
+    else if(msg.event == "subscribe"){
+        baseService.subscribe(msg,function(err,content){
+            wx.sendMsg(content);
+        });
+    }
+    else if(msg.event == "unsubscribe"){
+        baseService.unsubscribe(msg,function(err,content){
+            wx.sendMsg(content);
+        });
     }
     else if(msg.event == "CLICK"){
         switch(msg.eventKey){
             case  "V_ORDER" :
                 baseService.order(msg,function(err,content){
                     if(err){
-                        console.log(err);
+                        console.error(err);
+                        wx.sendMsg("service error");
                     }
                     else{
                         wx.sendMsg(content);
                     }
                 });
                 break;
-            case  "V_LAST" :
-                baseService.dowload();
+            case  "V_MY" :
+                baseService.myOrder(msg,function(err,content){
+                    if(err){
+                        console.error(err);
+                        wx.sendMsg("service error");
+                    }
+                    else{
+                        wx.sendMsg(content);
+                    }
+                });
+                break;
+            case  "V_EVENT" :
+                baseService.lbsEvent(msg,function(err,content){
+                    if(err){
+                        console.error(err);
+                        wx.sendMsg("service error");
+                    }
+                    else{
+                        wx.sendMsg(content);
+                    }
+                });
                 break;
             default :
+                wx.sendMsg("");
                 break;
         }
     }
-    wx.sendMsg({});
+
 };
 
 

@@ -7,7 +7,7 @@
 var  Text = {
 
       //默认文本
-      defaults : "分享位置即可查看附近外卖并进行订餐",
+      defaults : "分享位置即可查看附近外卖并进行订餐。",
       //查看目前在线用户数量
       getUsers : function(){
             var length = global.users.size();

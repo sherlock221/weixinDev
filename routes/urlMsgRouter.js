@@ -3,7 +3,5 @@
  * @type {exports}
  */
 exports.handler = function(wx,msg){
-
     console.log("url事件",msg);
-
 };

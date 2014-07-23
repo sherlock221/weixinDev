@@ -2,15 +2,86 @@
 <%- include /common/meta.html %>
 <%- include /common/header.html %>
 <title>我的订单</title>
+<style type="text/css">
 
+    #order{
+        margin: 20px 20px;
+    }
+    .order-list{
+
+        overflow: hidden;
+        text-align: left;
+
+    }
+    .order-list >li{
+        padding: 15px ;
+        border:  1px solid #DDDDDD;
+        margin-bottom: 15px;
+    }
+    .order-list >li >div>label, .order-list>li>div>span{
+        display: inline-block;
+    }
+
+    .order-list >li >div>label{
+        width: 100px;
+        margin-bottom: 10px;
+    }
+</style>
 </head>
 <body>
 
-    <div id="order_list">
-            ding dan chu li
+    <div id="order">
+
+
+
+        <ul class="order-list" id="order-list">
+
+
+        </ul>
+
     </div>
+    <input type="hidden" id="openId" value="<%=openId %>"/>
+
+    <script type="text/html" id="order-tempalte">
+
+       <@if(result.length<=0){ @>
+                 您还没有订单！
+       <@}@>
+
+      <@for (var i=0;i<result.length;i++) {@>
+        <li>
+
+            <div>
+                <label>下单时间</label>
+                <span><@=dateFormat(result[i].timeCreated) @></span>
+            </div>
+
+            <div>
+                <label>下单金额</label>
+                <span>￥<@=result[i].totalAmount @></span>
+            </div>
+
+            <div>
+                <label> 餐馆: </label>
+                <span><@=result[i].supplier.companyName @></span>
+            </div>
+
+            <div>
+                <label> 餐馆电话: </label>
+                <span><@=result[i].supplier.contactMobile @></span>
+            </div>
+
+            <div>
+                <label> 餐馆地址: </label>
+                <span><@=result[i].supplier.companyAddress @></span>
+            </div>
+
+        </li>
+     <@}@>
+    </script>
 
     <%- include /common/footer.html %>
-    <script type="text/javascript" src="/funweb/js/myorder.js"></script>
+    <script type="text/javascript" src="/funweb/src/js/plugin/artTemplate.js"></script>
+    <script type="text/javascript" src="/funweb/src/js/service/myorder.js"></script>
 </body>
 </html>

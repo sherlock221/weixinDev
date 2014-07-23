@@ -64,6 +64,8 @@ module.exports.use = function(app){
 
     //监听微信post
     app.post('/', function(req, res) {
+        var  param = req.query.id;
+        console.log(param);
         // loop
         weixin.loop(req, res);
     });

@@ -9,7 +9,7 @@
 		<p class="title"></p>
 	</div>
 
-	<div data-role="page" id="content">
+	<div data-role="page" id="content" style="position: relative;">
 		<div class="listbottom"></div>
 		<div class="listbottom"></div>
 	</div>
@@ -29,8 +29,10 @@
     <input type="hidden" id="supplierId" value="<%=supplierId %>"/>
     <input type="hidden" id="deliveryLeastValue" value="<%=deliveryLeastValue %>"/>
     <input type="hidden" id="deliveryCharge" value="<%=deliveryCharge %>"/>
+    <input type="hidden" id="openId" value="<%=openId %>"/>
 
-<script type="text/javascript" src="/funweb/js/dishes.js"></script>
-<%- include /common/footer.html %>
+    <%- include /common/footer.html %>
+<script type="text/javascript" src="/funweb/src/js/service/dishes.js"></script>
+
 </body>
 </html>

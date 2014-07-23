@@ -3,7 +3,6 @@
 <title>餐厅列表</title>
 <%- include /common/meta.html %>
 <%- include /common/header.html %>
-<script type="text/javascript" src="/funweb/js/restaurantList.js"></script>
 </head>
 
 <body>
@@ -14,11 +13,13 @@
    		<div style="top: 0; height: 50px; width: 100%; text-align: center; line-height: 50px; background: #F8F8F8;"></div>
 	</div>
 	<div id="pageone">
+
 		<ul id='rest_list'>
 			
 		</ul>
 	</div>
 	<div id="pagetwo" style="display: none">
+
 		<ul id="order_list">
 			
 		</ul>
@@ -40,7 +41,12 @@
     <!-- 隐藏全局值 -->
     <input type="hidden" id="latitude" value="<%=latitude %>"/>
     <input type="hidden" id="longitude" value="<%=longitude %>"/>
+    <input type="hidden" id="promotional" value="<%=promotional %>"/>
+    <input type="hidden" id="openId" value="<%=openId %>"/>
 
         <%- include /common/footer.html %>
+
+
+<script type="text/javascript" src="/funweb/src/js/service/restaurantlist.js"></script>
 </body>
 </html>
